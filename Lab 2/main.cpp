@@ -106,7 +106,7 @@ double process(int size){
 }
 
 int main (void){
-  double precisionToReach = pow(2, -10);
+  double precisionToReach = pow(10, -10);
 
   std::cout << "Find e-2" << std::endl;
   std::cout << "------------------" << std::endl;
