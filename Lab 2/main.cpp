@@ -102,6 +102,12 @@ double process(int size){
 
   // get x1
   double result = gsl_vector_get(x, 0);
+
+  // cleaning
+  gsl_permutation_free (p);
+  gsl_vector_free (x);
+  gsl_vector_free (v);
+  gsl_matrix_free (m);
   return result;
 }
 
