@@ -9,11 +9,9 @@ int main (void){
 
   double b_data[] = { 1.0, 2.0, 3.0, 4.0 };
 
-  gsl_matrix_view m
-    = gsl_matrix_view_array (a_data, 4, 4);
+  gsl_matrix_view m = gsl_matrix_view_array (a_data, 4, 4);
 
-  gsl_vector_view b
-    = gsl_vector_view_array (b_data, 4);
+  gsl_vector_view b = gsl_vector_view_array (b_data, 4);
 
   gsl_vector *x = gsl_vector_alloc (4);
 
@@ -22,6 +20,8 @@ int main (void){
   gsl_permutation * p = gsl_permutation_alloc (4);
 
   gsl_linalg_LU_decomp (&m.matrix, p, &s);
+
+  gsl_matrix_fprintf(stdout, &m.matrix, "%g");
 
   gsl_linalg_LU_solve (&m.matrix, p, &b.vector, x);
 
