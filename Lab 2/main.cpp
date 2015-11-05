@@ -118,6 +118,9 @@ int main (void){
   std::cout << "------------------" << std::endl;
   std::cout << "Precision to reach: " << precisionToReach << std::endl << std::endl;
 
+  // Set COUT Precision
+  std::cout.precision(20);
+
   int i = 1;
   while(true){
     double result = process(i);
