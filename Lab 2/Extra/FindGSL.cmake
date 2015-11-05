@@ -16,21 +16,17 @@
 #  GSL_LINK_DIRECTORIES = link directories, useful for rpath on Unix
 #  GSL_EXE_LINKER_FLAGS = rpath on Unix
 
-INCLUDE(FindPkgConfig)
-PKG_CHECK_MODULES(GSL "gsl >= 1.10")
-IF(NOT GSL_FOUND)
-
 set( GSL_FOUND OFF )
 set( GSL_CBLAS_FOUND OFF )
 
 # Windows, but not for Cygwin and MSys where gsl-config is available
 if( WIN32 AND NOT CYGWIN AND NOT MSYS )
-	# look for headers
+  # look for headers
   find_path( GSL_INCLUDE_DIR
     NAMES gsl/gsl_cdf.h gsl/gsl_randist.h
     )
   if( GSL_INCLUDE_DIR )
-  	# look for gsl library
+    # look for gsl library
     find_library( GSL_LIBRARY
       NAMES gsl
     )
@@ -40,7 +36,7 @@ if( WIN32 AND NOT CYGWIN AND NOT MSYS )
       set( GSL_FOUND ON )
     endif( GSL_LIBRARY )
 
-		# look for gsl cblas library
+    # look for gsl cblas library
     find_library( GSL_CBLAS_LIBRARY
         NAMES gslcblas
       )
@@ -51,20 +47,20 @@ if( WIN32 AND NOT CYGWIN AND NOT MSYS )
     set( GSL_LIBRARIES ${GSL_LIBRARY} ${GSL_CBLAS_LIBRARY} )
   endif( GSL_INCLUDE_DIR )
 
-  #mark_as_advanced(
-  #  GSL_INCLUDE_DIR
-  #  GSL_LIBRARY
-  #  GSL_CBLAS_LIBRARY
-  #)
+  mark_as_advanced(
+    GSL_INCLUDE_DIR
+    GSL_LIBRARY
+    GSL_CBLAS_LIBRARY
+  )
 else( WIN32 AND NOT CYGWIN AND NOT MSYS )
   if( UNIX OR MSYS )
-		find_program( GSL_CONFIG_EXECUTABLE gsl-config
-			/usr/bin/
-			/usr/local/bin
-		)
+    find_program( GSL_CONFIG_EXECUTABLE gsl-config
+      /usr/bin/
+      /usr/local/bin
+    )
 
-		if( GSL_CONFIG_EXECUTABLE )
-			set( GSL_FOUND ON )
+    if( GSL_CONFIG_EXECUTABLE )
+      set( GSL_FOUND ON )
 
       # run the gsl-config program to get cxxflags
       execute_process(
@@ -118,14 +114,14 @@ else( WIN32 AND NOT CYGWIN AND NOT MSYS )
         set( GSL_FOUND FALSE )
       endif( RET EQUAL 0 )
 
-			MARK_AS_ADVANCED(
-				GSL_CFLAGS
-			)
-			message( STATUS "Using GSL from ${GSL_PREFIX}" )
-		else( GSL_CONFIG_EXECUTABLE )
-			message( STATUS "FindGSL: gsl-config not found.")
-		endif( GSL_CONFIG_EXECUTABLE )
-	endif( UNIX OR MSYS )
+      MARK_AS_ADVANCED(
+        GSL_CFLAGS
+      )
+      message( STATUS "Using GSL from ${GSL_PREFIX}" )
+    else( GSL_CONFIG_EXECUTABLE )
+      message( STATUS "FindGSL: gsl-config not found.")
+    endif( GSL_CONFIG_EXECUTABLE )
+  endif( UNIX OR MSYS )
 endif( WIN32 AND NOT CYGWIN AND NOT MSYS )
 
 if( GSL_FOUND )
@@ -137,7 +133,3 @@ else( GSL_FOUND )
     message( FATAL_ERROR "FindGSL: Could not find GSL headers or library" )
   endif( GSL_FIND_REQUIRED )
 endif( GSL_FOUND )
-
-INCLUDE(FindPackageHandleStandardArgs)
-FIND_PACKAGE_HANDLE_STANDARD_ARGS(GSL DEFAULT_MSG GSL_LIBRARIES GSL_INCLUDE_DIRS)
-ENDIF(NOT GSL_FOUND)
