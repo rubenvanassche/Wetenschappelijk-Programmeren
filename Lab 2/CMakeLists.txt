@@ -8,6 +8,6 @@ find_package(GSL)
 
 INCLUDE_DIRECTORIES(${GSL_INCLUDE_DIRS})
 
-ADD_EXECUTABLE(main main.cpp)
+ADD_EXECUTABLE(main main.cpp util.cpp)
 
 TARGET_LINK_LIBRARIES(main ${GSL_LIBRARIES})
