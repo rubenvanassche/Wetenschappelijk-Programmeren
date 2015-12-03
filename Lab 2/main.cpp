@@ -3,7 +3,6 @@
 #include <gsl/gsl_math.h>
 #include <iostream>
 #include <math.h>
-#include "util.h"
 
 gsl_matrix* calculateTriangularMatrix(int size){
   // Create the triangular matrix
