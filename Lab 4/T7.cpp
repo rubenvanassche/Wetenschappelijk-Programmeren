@@ -5,6 +5,7 @@
 #include <vector>
 #include <fstream>
 #include <utility>
+#include <algorithm>
 
 class FileWriter{
 public:
@@ -103,8 +104,8 @@ int main (void){
   points.insert( points.end(), extremas.begin(), extremas.end() );
 
   // Find minimum and maximum of zeros and extremas combined
-  auto minElement = min_element(std::begin(points), std::end(points));
-  auto maxElement = max_element(std::begin(points), std::end(points));
+  auto minElement = std::min_element(std::begin(points), std::end(points));
+  auto maxElement = std::max_element(std::begin(points), std::end(points));
   double min = *minElement;
   double max = *maxElement;
 

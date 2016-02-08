@@ -5,6 +5,7 @@
 #include <vector>
 #include <fstream>
 #include <utility>
+#include <algorithm>
 
 
 // Caclulates the y value of the chebychev polynom

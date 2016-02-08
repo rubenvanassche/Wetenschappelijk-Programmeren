@@ -1,14 +1,31 @@
-Lineaire Stelsels Vergelijkingen - Oefening 4
+Orthogonale Basissen - Oefening 6
 ---------------------------------------------
 
 Vereisten:
 - Cmake
 - GSL
 - C++ Compiler
+- Gnuplot
 
 Compilen:
 cmake .
 make
 
 Runnen:
-./main
+./T7
+./Monisch
+
+Plotten:
+gnuplot T7.gnuplot
+
+Bestanden:
+Monsich.cpp -> Programma voor deel 4 oefening
+Report.pdf -> Raport
+Report.* -> Tex Files
+T7.cpp -> Programma voor deel 3 oefening
+T7.gnuplot -> Instructies voor GNUPlot voor deel 3 oefening
+T7.png -> gegenereerde grafiek deel 3 oefening
+T7.dat -> punten grafiek deel 3 oefening
+T7_zeros.dat -> nulpunten grafiek deel 3 oefening
+T7_extremas.dat -> extremas grafiek deel 3 oefening
+util.* -> Utility functies, voor de moment nutteloos

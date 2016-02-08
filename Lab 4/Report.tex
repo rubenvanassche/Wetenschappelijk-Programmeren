@@ -215,10 +215,10 @@ De formule voor extrema wordt beschreven door:
 $ T_{i}(cos(\frac{j\pi}{i}) = (-1)^{j} $ voor j = 0, ..., i
 \newline
 
-Om een grafiek te tekenen in GNUPlot hebben we een set van punten nodig welke we dan plotten. De punten kunnen we berekenen d.m.v. de compacte chebychev vorm $ T_{i}(x) = cos(i*arccos(x)) $. We zullen 1000 punten bereken en deze vervolgens opslaan in een bestand wat we aan GNUPlot geven.
+Om een grafiek te tekenen in GNUPlot hebben we een set van punten nodig welke we dan plotten. De punten kunnen we berekenen d.m.v. de compacte chebychev vorm $ T_{i}(x) = cos(i*arccos(x)) $. We zullen 1000 punten berekenen en deze vervolgens opslaan in een bestand wat we aan GNUPlot geven.
 \newline
 
-Daarnaast zullen we ook nog de 7 x-waarden van nulpunten berekenen d.m.v. de formule in de cursus en de 8 x-waarden van extrema berkend d.m.v. de formule in de cursus. Deze 15 punten zullen we ook doorgeven aan GNUPlot waardoor we een grafiek bekomen met zowel een plot van: de functie, de nulpunten en de extrema.
+Daarnaast zullen we ook nog de 7 x-waarden van nulpunten berekenen d.m.v. de formule in de cursus en de 8 x-waarden van extrema berekend d.m.v. de formule in de cursus. Deze 15 punten zullen we ook doorgeven aan GNUPlot waardoor we een grafiek bekomen met zowel een plot van: de functie, de nulpunten en de extrema.
 \newline
 
 De 1000 punten die we gaan plotten zullen in een interval $[a, b]$ liggen welk moet bepaald worden zodat de meest interessante grafiek wordt geplot. We zullen hiervoor een vector $ v$ construeren met de berekende x-waarden van nulpunten en extrema. Uit $v$ halen we dan $a = min(v)$ en $b = max(v)$. Vervolgens zullen we op dit interval 1000 punten berekenen met $x = min(v) + i *(\frac{max(v)-min(v)}{1000})$ waarbij i = 0,...,1000.
@@ -227,7 +227,7 @@ De 1000 punten die we gaan plotten zullen in een interval $[a, b]$ liggen welk m
 \textbf{Resultaat}
 \includegraphics[scale=0.6]{T7}
 \newline
-Na het bereken blijkt dat we best onze grafiek weergeven op het interval $[-1, 1]$. Hieronder de uit formules berekende x-waarden van nulpunten en extrema:
+Na het berekenen blijkt dat we best onze grafiek weergeven op het interval $[-1, 1]$. Hieronder de uit formules berekende x-waarden van nulpunten en extrema:
 \newline
 
 \begin{tabular}{ l c c r}
@@ -244,7 +244,7 @@ Na het bereken blijkt dat we best onze grafiek weergeven op het interval $[-1, 1
 \newline
 \newline
 
-Wanneer we visueel de grafiek bestuderen lijken de formules uit de cursus correct! De berekende nulpunten liggen op de coordinaten waar de nulpunten van de grafiek liggen. Bij de berekende extrema is dit hetzelfde.
+Wanneer we visueel de grafiek bestuderen lijken de formules uit de cursus correct! De berekende nulpunten liggen op de coördinaten waar de nulpunten van de grafiek liggen. Bij de berekende extrema is dit hetzelfde.
 
 \section{Maak $T_{7}(x)$ monisch}
 Een monische chebychev vergelijking wordt berekend door: $\frac{T_{n}(x)}{2^{n-1}}$ in het geval van $T_{7}(x)$ zal dit dus de veelterm $\frac{T_{7}(x)}{2^{6}}$ zijn.

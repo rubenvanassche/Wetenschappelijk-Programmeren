@@ -1,0 +1,13 @@
+Lineaire Stelsels Vergelijkingen - Oefening 4
+---------------------------------------------
+
+Vereisten:
+- Cmake
+- C++11 Compiler
+
+Compilen:
+cmake .
+make
+
+Runnen:
+./main
