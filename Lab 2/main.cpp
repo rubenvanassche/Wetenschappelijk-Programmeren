@@ -293,7 +293,7 @@ public:
 
 int main (void){
     // Set COUT Precision
-    std::cout.precision(4);
+    std::cout.precision(20);
 
 
     for(int i = 3; i < 15; i += 3){

@@ -1,0 +1,146 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[dutch]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\author{Ruben Van Assche}
+\title{Wetenschappelijk Programmeren: Lineaire Stelsels Vegelijkingen - Oefening 4}
+\begin{document}
+\maketitle
+\section{Opgave}
+In deze opgave moest voor $n = 3, 6, 9, 12$ de Hilbert Matrix berekend worden, van deze matrix moest dan een determinant en conditiegetal berekend worden. Vervolgens moest deze via GEPP opgelost worden met een kolom uit de eenheidsmatrix. Daarna moest de fout berekend worden.
+
+\section{Hilbert Matrix Berekenen}
+De Hilbert matrix is makkelijk te berekenen met de gegeven formule. Volgende matrices zijn berekend met Maple(het programma bij dit rapport geschreven berekent deze ook maar Maple kan deze matrices makkelijker omzetten naar een Latex formaat).
+\begin{center}
+\textbf{n = 3}
+\end{center}
+$$ \left[ \begin {array}{ccc} 1&1/2&1/3\\ \noalign{\medskip}1/2&1/3&1/4
+\\ \noalign{\medskip}1/3&1/4&1/5\end {array} \right] $$
+\begin{center}
+\textbf{n = 6}
+\end{center}
+$$  \left[ \begin {array}{cccccc} 1&1/2&1/3&1/4&1/5&1/6
+\\ \noalign{\medskip}1/2&1/3&1/4&1/5&1/6&1/7\\ \noalign{\medskip}1/3&1
+/4&1/5&1/6&1/7&1/8\\ \noalign{\medskip}1/4&1/5&1/6&1/7&1/8&1/9
+\\ \noalign{\medskip}1/5&1/6&1/7&1/8&1/9&1/10\\ \noalign{\medskip}1/6&
+1/7&1/8&1/9&1/10&1/11\end {array} \right] $$
+\begin{center}
+\textbf{n = 9}
+\end{center}
+$$  \left[ \begin {array}{ccccccccc} 1&1/2&1/3&1/4&1/5&1/6&1/7&1/8&1/9
+\\ \noalign{\medskip}1/2&1/3&1/4&1/5&1/6&1/7&1/8&1/9&1/10
+\\ \noalign{\medskip}1/3&1/4&1/5&1/6&1/7&1/8&1/9&1/10&1/11
+\\ \noalign{\medskip}1/4&1/5&1/6&1/7&1/8&1/9&1/10&1/11&1/12
+\\ \noalign{\medskip}1/5&1/6&1/7&1/8&1/9&1/10&1/11&1/12&1/13
+\\ \noalign{\medskip}1/6&1/7&1/8&1/9&1/10&1/11&1/12&1/13&1/14
+\\ \noalign{\medskip}1/7&1/8&1/9&1/10&1/11&1/12&1/13&1/14&1/15
+\\ \noalign{\medskip}1/8&1/9&1/10&1/11&1/12&1/13&1/14&1/15&1/16
+\\ \noalign{\medskip}1/9&1/10&1/11&1/12&1/13&1/14&1/15&1/16&1/17
+\end {array} \right] 
+ $$
+\begin{center}
+\textbf{n = 12}
+\end{center}
+$$  \left[ \begin {array}{cccccccccccc} 1&1/2&1/3&1/4&1/5&1/6&1/7&1/8&1/9
+&1/10&1/11&1/12\\ \noalign{\medskip}1/2&1/3&1/4&1/5&1/6&1/7&1/8&1/9&1/
+10&1/11&1/12&1/13\\ \noalign{\medskip}1/3&1/4&1/5&1/6&1/7&1/8&1/9&1/10
+&1/11&1/12&1/13&1/14\\ \noalign{\medskip}1/4&1/5&1/6&1/7&1/8&1/9&1/10&
+1/11&1/12&1/13&1/14&1/15\\ \noalign{\medskip}1/5&1/6&1/7&1/8&1/9&1/10&
+1/11&1/12&1/13&1/14&1/15&1/16\\ \noalign{\medskip}1/6&1/7&1/8&1/9&1/10
+&1/11&1/12&1/13&1/14&1/15&1/16&1/17\\ \noalign{\medskip}1/7&1/8&1/9&1/
+10&1/11&1/12&1/13&1/14&1/15&1/16&1/17&1/18\\ \noalign{\medskip}1/8&1/9
+&1/10&1/11&1/12&1/13&1/14&1/15&1/16&1/17&1/18&1/19
+\\ \noalign{\medskip}1/9&1/10&1/11&1/12&1/13&1/14&1/15&1/16&1/17&1/18&
+1/19&1/20\\ \noalign{\medskip}1/10&1/11&1/12&1/13&1/14&1/15&1/16&1/17&
+1/18&1/19&1/20&1/21\\ \noalign{\medskip}1/11&1/12&1/13&1/14&1/15&1/16&
+1/17&1/18&1/19&1/20&1/21&1/22\\ \noalign{\medskip}1/12&1/13&1/14&1/15&
+1/16&1/17&1/18&1/19&1/20&1/21&1/22&1/23\end {array} \right] 
+$$
+\section{Determinant}
+Om de determinant te berekenen wordt er gebruik gemaakt van een LU decompositie. We zien dat naarmate de matrix groter wordt de determinant exponentieel kleiner wordt. Dit is logisch gezien bij de berkening van de determinant het product van de diagonale elementen van de U matrix worden genomen. Het aantal kleine diagonale kleine waarden stijgt naarmate n stijgt waardoor het totale product met een stijging van n kleiner wordt.
+\begin{center}
+\begin{tabular}{ll}
+\textbf{n} & \textbf{Determinant} \\
+3          & 0.00046296296296296135433            \\
+6          & 5.3672998868168426532e-18            \\
+9          & 9.7202660411305632762e-43             \\
+12         & 2.8332547472051984479e-78           
+\end{tabular}
+\end{center}
+
+\section{Konditiegetal}
+Om het konditiegetal te berekenen wordt gebruik gemaakt van een singuliere waarden decompositie, hierbij worden uit de singuliere waarden van de matrix A de maximale en de minimale waarde gehaald. Vervolgens is het konditiegetal $max/min$. Hierdoor krijgen we volgende konditiegetallen:
+\begin{center}
+\begin{tabular}{ll}
+\textbf{n} & \textbf{Konditiegetal} \\
+3          & 524.05677758605759209            \\
+6          & 14951058.64061903581            \\
+9          & 493153283608.33990479             \\
+12         & 17797394126083356           
+\end{tabular}
+\end{center}
+Het valt direct op dat het konditiegetal exponentieel stijgt, dit is logisch: naarmate de matrix groter wordt is deze veel slechter geconditioneerd. Dit komt omdat bij elke stijging van n, er kleinere waarden in de matrix bijkomen waardoor het verschil in grootte tussen de waarde in de linker bovenhoek en de rechter onderhoek zeer groot is. Dit veroorzaakt een slecht gekonditioneerde matrix.
+
+\section{Oplossen met GEPP}
+Voor het oplossen van de matrix A met GEPP moest voor het rechterlid een kolom uit de eenheidsmatrix genomen worden. Voor elke n heb ik hierbij de eerste kolom uit de eenheidsmatrix genomen waardoor deze altijd één enkele 1 bovenaan heeft en voor de rest nullen. Omdat deze berekende oplossing moest vergeleken worden met een exacte oplossing om zo de fout in te schatten heb ik eerst d.m.v. MAPLE de matrix opgelost. Hieronder staat een stukje voorbeeld code van hoe een matrix op te lossen in MAPLE met $
+n = 3$.
+\begin{lstlisting}
+m := HilbertMatrix(3, 3)
+b := Vector[column]([1, 0, 0])
+x := LinearSolve(m, b)
+\end{lstlisting}
+De vectoren die hieruit komen zijn hard-coded in de code om later bij de foutenafschatting te gebruiken.
+\newline
+\newline
+Om d.m.v. GEPP de oplossing te berekenen doen we eerst een LU decompositie(zie determinant), hierdoor bekomen we dan een matrix welke we zeer makkelijk kunnen oplossen d/m/v/ $Ax = y$ omdat deze A driehoekig is. Hieronder staan de berekende x vectoren:
+\newline
+\begin{center}
+\begin{tabular}{lllll}
+\textbf{n}  & \textbf{3} & \textbf{6} & \textbf{9} & \textbf{12} \\
+\textbf{1}  & 9          & 36         & 81         & 141.7       \\
+\textbf{2}  & -36        & -630       & -3240      & -1.001e+04  \\
+\textbf{3}  & 30         & 3360       & 4.158e+04  & 2.312e+05   \\
+\textbf{4}  &            & -7560      & -2.495e+05 & -2.579e+06  \\
+\textbf{5}  &            & 7560       & 8.108e+05  & 1.639e+07   \\
+\textbf{6}  &            & -2772      & -1.514e+06 & -6.46e+07   \\
+\textbf{7}  &            &            & 1.622e+06  & 1.652e+08   \\
+\textbf{8}  &            &            & -9.266e+05 & -2.79e+08   \\
+\textbf{9}  &            &            & 2.188e+05  & 3.088e+08   \\
+\textbf{10} &            &            &            & -2.154e+08  \\
+\textbf{11} &            &            &            & 8.587e+07   \\
+\textbf{12} &            &            &            & -1.492e+07 
+\end{tabular}
+\end{center}
+\section{Factor C}
+De factor c moet worden berekend uit volgende ongelijkheid: $\left \| x - \tilde{x} \right \| \leqslant  c*K(A)*\left \| \tilde{x} \right \|*ULP$. Met een klein beetje rekenwerk kunnen we deze ongelijkheid omvormen tot volgende: $\frac{\left \| x - \tilde{x} \right \|}{ K(A)*\left \| \tilde{x} \right \|*ULP} \leqslant  c $. Voor ULP wordt gebruik gemaakt van de standaard library van c++ welke volgende functie voorziet: \textit{std::numericlimits<double>::epsilon()}. De andere factoren in de ongelijkheid zijn al in vorige delen van de oefening berekend. Hieruit moeten enkel nog de normen berekend worden, hierbij maken we gebruik van de euclidische $l_{2}$ norm, GSL voorziet hiervoor een functie om deze te berekenen. Uit de ongelijkheid halen we dan voor de verschillende n volgende c's:
+\begin{center}
+\begin{tabular}{ll}
+\textbf{n} & \textbf{C} \\
+3          & 0.035236789371484285305            \\
+6          & 7034286.1681871246547           \\
+9          &  0.028988609754939251989          \\
+12         & 0.019105287208575325725           
+\end{tabular}
+\end{center}
+Wat moet worden vermeld is dat in de deze ongelijkheid de factor c groter mag uitkomen dan in de tabel hierboven gegegeven. Dit omdat de c's hierboven gelijk zijn aan $\frac{\left \| x - \tilde{x} \right \|}{ K(A)*\left \| \tilde{x} \right \|*ULP}$. Dit is belangrijk voor het volgende deel van de oefening.
+\section{Het Residu}
+Als laatste moet er gecheckt worden of volgende ongelijkheid: $\left \| y - AX \right \|  \leqslant c*\left \| A \right \|*\left \| \tilde{x} \right \|*ULP$ klopt. Hiervoor moet de norm van de matrix A berekend worden waarvoor GSL geen enkele functie voorziet maar dit is geen probleem gezien dat de euclidische norm van de matrix gelijk is aan de maximale singuliere waarde(deze zijn al eerder berekend). Om een matrix te vermeningvuldigen met een vector werd er gebruk, gemaakt van de BLAS subroutines. Wanneer we dan de ongelijkheden voor verschillende n uitrekenen bekomen we volgende waarden:
+\begin{center}
+\begin{tabular}{ll}
+\textbf{n} & \textbf{Ongelijkheid} \\
+3          & 8.882e-16 <= 5.258e-16            \\
+6          & 1.705e-13 <= 2.924e-05         \\
+9          &  4.584e-11 <= 2.843e-11          \\
+12         & 8.248e-09 <= 3.876e-09          
+\end{tabular}
+\end{center}
+Het probleem is dat de ongelijkheden niet kloppen, nu is dit eigenlijk geen probleem. Als we zien naar de originele ongelijkheid dan staat er in het rechterlid de factor c. In de vorige sectie werd al gezegd dat de gegeven factor c hetzelfde is of groter. Laat ons nu een grotere factor c nemen, dan is het zeer makkelijk om de ongelijkheden te doen laten kloppen. Gezien de niet al te grote verschillen zou het vermenigvuldigen van c met 3 al alle problemen oplossen. Hierdoor kloppen de ongelijkheden.
+\section{Code}
+\textbf{Main.cpp - De code voor alle berekeningen}
+\lstinputlisting{../main.cpp}
+
+\end{document}
