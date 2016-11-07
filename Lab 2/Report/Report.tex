@@ -61,7 +61,7 @@ $$  \left[ \begin {array}{cccccccccccc} 1&1/2&1/3&1/4&1/5&1/6&1/7&1/8&1/9
 1/16&1/17&1/18&1/19&1/20&1/21&1/22&1/23\end {array} \right] 
 $$
 \section{Determinant}
-Om de determinant te berekenen wordt er gebruik gemaakt van een LU decompositie. We zien dat naarmate de matrix groter wordt de determinant exponentieel kleiner wordt. Dit is logisch gezien bij de berkening van de determinant het product van de diagonale elementen van de U matrix worden genomen. Het aantal kleine diagonale kleine waarden stijgt naarmate n stijgt waardoor het totale product met een stijging van n kleiner wordt.
+Om de determinant te berekenen wordt er gebruik gemaakt van een LU decompositie. We zien dat naarmate de matrix groter wordt de determinant exponentieel kleiner wordt. Dit is logisch gezien bij de berekening van de determinant het product van de diagonale elementen van de U matrix worden genomen. Het aantal kleine diagonale kleine waarden stijgt naarmate n stijgt waardoor het totale product met een stijging van n kleiner wordt.
 \begin{center}
 \begin{tabular}{ll}
 \textbf{n} & \textbf{Determinant} \\
@@ -86,7 +86,7 @@ Om het konditiegetal te berekenen wordt gebruik gemaakt van een singuliere waard
 Het valt direct op dat het konditiegetal exponentieel stijgt, dit is logisch: naarmate de matrix groter wordt is deze veel slechter geconditioneerd. Dit komt omdat bij elke stijging van n, er kleinere waarden in de matrix bijkomen waardoor het verschil in grootte tussen de waarde in de linker bovenhoek en de rechter onderhoek zeer groot is. Dit veroorzaakt een slecht gekonditioneerde matrix.
 
 \section{Oplossen met GEPP}
-Voor het oplossen van de matrix A met GEPP moest voor het rechterlid een kolom uit de eenheidsmatrix genomen worden. Voor elke n heb ik hierbij de eerste kolom uit de eenheidsmatrix genomen waardoor deze altijd één enkele 1 bovenaan heeft en voor de rest nullen. Omdat deze berekende oplossing moest vergeleken worden met een exacte oplossing om zo de fout in te schatten heb ik eerst d.m.v. MAPLE de matrix opgelost. Hieronder staat een stukje voorbeeld code van hoe een matrix op te lossen in MAPLE met $
+Voor het oplossen van de matrix A met GEPP moest voor het rechterlid een kolom uit de eenheidsmatrix genomen worden. Voor elke n heb ik hierbij de eerste kolom uit de eenheidsmatrix genomen waardoor deze altijd een enkele 1 bovenaan heeft en voor de rest nullen. Omdat deze berekende oplossing moest vergeleken worden met een exacte oplossing om zo de fout in te schatten heb ik eerst d.m.v. MAPLE de matrix opgelost. Hieronder staat een stukje voorbeeld code van hoe een matrix op te lossen in MAPLE met $
 n = 3$.
 \begin{lstlisting}
 m := HilbertMatrix(3, 3)

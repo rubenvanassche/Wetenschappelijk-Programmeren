@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  3 NOV 2016 21:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  27 OCT 2016 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -256,24 +256,56 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (28.3341pt too wide) detected at line 62
+ []
+
+
+Overfull \hbox (76.34154pt too wide) in paragraph at lines 19--29
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
+
+ []
+
+<Polynomial.png, id=1, 602.25pt x 602.25pt>
+File: Polynomial.png Graphic file (type png)
+ <use Polynomial.png>
+Package pdftex.def Info: Polynomial.png used on input line 37.
+(pdftex.def)             Requested size: 421.57211pt x 421.57211pt.
+
+Overfull \hbox (76.57211pt too wide) in paragraph at lines 37--39
 []
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
+[1
 
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<CubicSpline.png, id=13, 602.25pt x 602.25pt>
+File: CubicSpline.png Graphic file (type png)
+ <use CubicSpline.png>
+Package pdftex.def Info: CubicSpline.png used on input line 41.
+(pdftex.def)             Requested size: 421.57211pt x 421.57211pt.
+
+Overfull \hbox (76.57211pt too wide) in paragraph at lines 41--43
+[]
  []
 
+[2 <./Polynomial.png>] <NaturalSpline.png, id=18, 602.25pt x 602.25pt>
+File: NaturalSpline.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
+<use NaturalSpline.png>
+Package pdftex.def Info: NaturalSpline.png used on input line 45.
+(pdftex.def)             Requested size: 421.57211pt x 421.57211pt.
 
+Overfull \hbox (76.57211pt too wide) in paragraph at lines 45--47
+[]
  []
 
-[3] [4] (../main.cpp
+[3 <./CubicSpline.png>] [4 <./NaturalSpline.png>] (../main.cpp
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 1.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
@@ -281,191 +313,120 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 21--22
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (213.00568pt too wide) in paragraph at lines 13--14
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 23--24
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 19--20
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 32--33
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 43--44
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][] 
  []
 
 [5]
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 82--83
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[6]
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 93--94
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 61--62
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 97--98
-[][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (117.0047pt too wide) in paragraph at lines 63--64
+[][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (57.00409pt too wide) in paragraph at lines 103--104
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (63.00415pt too wide) in paragraph at lines 104--105
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (63.00415pt too wide) in paragraph at lines 109--111
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 130--132
-[][][][][][][][][][][][][][][][][] 
- []
-
-[7]
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 139--141
-[][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 141--144
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (219.00574pt too wide) in paragraph at lines 144--146
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
-
- []
-
-
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 150--152
-[][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (261.00616pt too wide) in paragraph at lines 154--155
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (75.00427pt too wide) in paragraph at lines 166--168
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 69--71
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[8]
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 190--191
+
+Overfull \hbox (57.00409pt too wide) in paragraph at lines 94--95
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+[6]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 100--101
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (27.00378pt too wide) in paragraph at lines 195--197
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[9]
-Overfull \hbox (249.00604pt too wide) in paragraph at lines 248--249
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 263--264
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (57.00409pt too wide) in paragraph at lines 265--266
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- []
-
-
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 272--273
-[][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (33.00385pt too wide) in paragraph at lines 273--274
+) (../graphs.gnuplot
+Overfull \hbox (147.005pt too wide) in paragraph at lines 1--2
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 274--275
-[][][][][][][][][][][][][][][][][] 
+Overfull \hbox (249.00604pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 277--278
-[][][][][][][][][][][][][][][][][] 
+Overfull \hbox (147.005pt too wide) in paragraph at lines 10--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (111.00464pt too wide) in paragraph at lines 278--279
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (249.00604pt too wide) in paragraph at lines 12--13
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (165.00519pt too wide) in paragraph at lines 279--280
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (147.005pt too wide) in paragraph at lines 19--20
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 280--281
-[][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (249.00604pt too wide) in paragraph at lines 21--22
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 282--283
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[10]
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 284--285
-[][][][][][][][][][][][][][][][][] 
- []
-
-) [11] (./Report.aux) ) 
+) [7] (./Report.aux) ) 
 Here is how much of TeX's memory you used:
- 4503 strings out of 493089
- 59499 string characters out of 6134841
- 159711 words of memory out of 5000000
- 7919 multiletter control sequences out of 15000+600000
- 11542 words of font info for 45 fonts, out of 8000000 for 9000
+ 4520 strings out of 493089
+ 59821 string characters out of 6134841
+ 152666 words of memory out of 5000000
+ 7929 multiletter control sequences out of 15000+600000
+ 11196 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,32p,824b,1503s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
+ 38i,6n,32p,448b,1503s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb>
-Output written on Report.pdf (11 pages, 172077 bytes).
+nts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb>
+Output written on Report.pdf (7 pages, 140476 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
