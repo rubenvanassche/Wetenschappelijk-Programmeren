@@ -1,0 +1,19 @@
+Least-squares fits are found by minimizing $\chi^2$ (chi-squared), the weighted sum of squared residuals over n experimental datapoints $(x_i, y_i)$ for the model $Y(c,x)$,
+
+$$\chi^2 = \sum_i w_i (y_i - Y(c, x_i))^2$$
+The p parameters of the model are $c = {c_0, c_1, …}$. The weight factors $w_i$ are given by $w_i = 1/\sigma_i^2$, where $\sigma_i$ is the experimental error on the data-point $y_i$. The errors are assumed to be Gaussian and uncorrelated. For unweighted data the chi-squared sum is computed without any weight factors.
+
+The fitting routines return the best-fit parameters c and their $p \times p$ covariance matrix. The covariance matrix measures the statistical errors on the best-fit parameters resulting from the errors on the data, $\sigma_i$, and is defined as $C_{ab} = <\delta c_a \delta c_b>$ where < > denotes an average over the Gaussian error distributions of the underlying datapoints.
+
+The covariance matrix is calculated by error propagation from the data errors $\sigma_i$. The change in a fitted parameter $\delta c_a$ caused by a small change in the data $\delta y_i $is given by
+
+$$\delta c_a = \sum_i (dc_a/dy_i) \delta y_i$$
+allowing the covariance matrix to be written in terms of the errors on the data,
+
+$$C_{ab} = \sum_{i,j} (dc_a/dy_i) (dc_b/dy_j) <\delta y_i \delta y_j>$$
+For uncorrelated data the fluctuations of the underlying datapoints satisfy $<\delta y_i \delta y_j> = \sigma_i^2 \delta_{ij}$, giving a corresponding parameter covariance matrix of
+
+$$C_{ab} = \sum_i (1/w_i) (dc_a/dy_i) (dc_b/dy_i) $$
+When computing the covariance matrix for unweighted data, i.e. data with unknown errors, the weight factors w_i in this sum are replaced by the single estimate $w = 1/\sigma^2$, where $\sigma^2$ is the computed variance of the residuals about the best-fit model, $\sigma^2 = \sum (y_i - Y(c,x_i))^2 / (n-p)$. This is referred to as the variance-covariance matrix.
+
+The standard deviations of the best-fit parameters are given by the square root of the corresponding diagonal elements of the covariance matrix, $\sigma_{c_a} = \sqrt{C_{aa}}$. The correlation coefficient of the fit parameters $c_a$ and $c_b$ is given by $\rho_{ab} = C_{ab} / \sqrt{C_{aa} C_{bb}}$.
