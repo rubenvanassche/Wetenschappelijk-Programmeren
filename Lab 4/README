@@ -1,0 +1,18 @@
+Data Smoothing - Oefening 5
+---------------------------------------------
+
+Vereisten:
+- Cmake
+- GSL
+- C++ Compiler
+- GNUPlot
+
+Compilen:
+cmake .
+make
+
+Runnen:
+./main
+
+Genereren van de grafieken:
+gnuplot graphs.gnuplot
