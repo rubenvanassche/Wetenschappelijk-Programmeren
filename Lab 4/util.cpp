@@ -1,21 +1,8 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <math.h>
-#include <gsl/gsl_errno.h>
-#include <gsl/gsl_spline.h>
-#include <iostream>
-#include <vector>
-#include <utility>
-#include <fstream>
-#include <string>
-#include <gsl/gsl_multifit.h>
-#include <gsl/gsl_vector_double.h>
-#include <gsl/gsl_blas.h>
-#include <sstream>
-#include <iomanip>
+#include "util.h"
+
 
 template <typename T>
-std::string to_pstring(const T a_value, const int n = 6)
+std::string to_pstring(const T a_value, const int n)
 {
     std::ostringstream out;
     out << std::setprecision(n) << a_value;
@@ -55,12 +42,19 @@ void writePointsFile(std::vector< std::pair<double, double> >& points, std::stri
     file.close();
 }
 
+double f(double x){
+    double e = 2.718281828459045;
+    double pi = 3.141592653589793;
 
+    return pow(e, -x)*sin(pi*x);
+}
 
-int main (void){
-    // Set COUT Precision
-    std::cout.precision(20);
+void calculateBasicPoints(double a, double b, std::string filename){
+    std::vector< std::pair<double, double> > points;
 
-    std::cout << "xxx" << std::endl;
+    for(double i = a;i <= b;i += 0.01){
+        points.push_back(std::make_pair(i, f(i)));
+    }
 
+    writePointsFile(points, filename);
 }

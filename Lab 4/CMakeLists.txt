@@ -8,6 +8,8 @@ find_package(GSL)
 
 INCLUDE_DIRECTORIES(${GSL_INCLUDE_DIRS})
 
-ADD_EXECUTABLE(main main.cpp)
+ADD_EXECUTABLE(chebychev chebychev.cpp util.cpp)
+ADD_EXECUTABLE(trio trio.cpp util.cpp)
 
-TARGET_LINK_LIBRARIES(main ${GSL_LIBRARIES})
+TARGET_LINK_LIBRARIES(chebychev ${GSL_LIBRARIES})
+TARGET_LINK_LIBRARIES(trio ${GSL_LIBRARIES})
