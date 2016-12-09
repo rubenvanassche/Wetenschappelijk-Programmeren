@@ -52,6 +52,7 @@ gsl_matrix* buildMatrixA(int n, int m){
         }
     }
 
+
     return A;
 }
 
@@ -99,12 +100,81 @@ gsl_vector* generateChebychevLeastSquares2(){
             top += fj*gsl_vector_get(y, i-1);
             bottom += pow(fj, 2);
 
-            std::cout << fj << std::endl;
-            std::cout << "(i:" << i << ",j:" << j << ")  top: " << top << "   bottom: " << bottom << std::endl;
         }
         std::cout << "\n";
 
         gsl_vector_set(c, j, top/bottom);
+    }
+
+    gsl_vector_free(y);
+
+    return c;
+}
+
+// n = 0
+inline double T0(double x)
+{
+    return 1.0 ;
+}
+
+// n = 1
+inline double T1(double x)
+{
+    return x ;
+}
+
+// n = 2
+inline double T2(double x)
+{
+    return (2.0 * x*x) - 1.0 ;
+}
+
+
+inline double Tn(unsigned int n, double x)
+{
+    if (n == 0)
+    {
+        return T0(x) ;
+    }
+    else if (n == 1)
+    {
+        return T1(x) ;
+    }
+    else if (n == 2)
+    {
+        return T2(x) ;
+    }
+
+    double tnm1(T2(x)) ;
+    double tnm2(T1(x)) ;
+    double tn(tnm1) ;
+
+    for (unsigned int l = 3 ; l <= n ; l++)
+    {
+        tn = (2.0 * x * tnm1) - tnm2 ;
+        tnm2 = tnm1;
+        tnm1 = tn;
+    }
+
+    return tn ;
+}
+
+gsl_vector* generateChebychevLeastSquares3(){
+    int m = 5;
+    int n = 11;
+
+    gsl_vector* c = gsl_vector_alloc(m);
+    gsl_vector* y = buildYVector(n);
+
+    for(int j = 1;j <= m;j++){
+        double total = 0.0;
+        for(int i = 1;i <= n;i++){
+            gsl_cheb_series *cs = gsl_cheb_alloc(j-1);
+            total += Tn(j-1,chebychevZero(i))*gsl_vector_get(y, i-1);
+
+        }
+
+        gsl_vector_set(c, j-1, total*(2.0/m));
     }
 
     gsl_vector_free(y);
@@ -140,15 +210,12 @@ void fitChebychevLeastSquares(gsl_vector* c){
 
 int main (void){
     // Set COUT Precision
-    std::cout.precision(20);
+    std::cout.precision(5);
 
     calculateBasicPoints(-1.0, 1, "BasicPoints1.dat");
 
     calculateChebychevPoints();
     gsl_vector* c = generateChebychevLeastSquares();
-    gsl_vector* c2 = generateChebychevLeastSquares2();
     print_vector(c);
-    std::cout << "" << std::endl;
-    print_vector(c2);
     fitChebychevLeastSquares(c);
 }

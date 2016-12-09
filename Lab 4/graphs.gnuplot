@@ -20,7 +20,8 @@ set key bmargin left horizontal Right noreverse enhanced autotitles box linetype
 set samples 10000
 set xtics 1
 set ytics 1
-plot "ChebyChevLeastSquares.dat" using 1:2 with lines
+plot "ChebyChevLeastSquares.dat" using 1:2 with lines, \
+"BasicPoints1.dat" using 1:2 with lines
 
 set terminal png  transparent enhanced font "arial,10" fontscale 1.0 size 800, 800
 set output 'TrioLeastSquares.png'
@@ -28,4 +29,5 @@ set key bmargin left horizontal Right noreverse enhanced autotitles box linetype
 set samples 10000
 set xtics 1
 set ytics 1
-plot "TrioLeastSquares.dat" using 1:2 with lines
+plot "TrioLeastSquares.dat" using 1:2 with lines, \
+"BasicPoints2.dat" using 1:2 with lines
