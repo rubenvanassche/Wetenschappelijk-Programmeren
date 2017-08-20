@@ -1,0 +1,7 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/Ruben/documents/school/Wetenschappelijk-Programmeren/Project/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4edec/fast"
+make[1]: *** No rule to make target `cmTC_4edec/fast'.  Stop.
+
+

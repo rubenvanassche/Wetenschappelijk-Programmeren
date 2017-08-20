@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.7)
+project(Project)
+
+set(CMAKE_CXX_STANDARD 11)
+
+find_package(GSL)
+INCLUDE_DIRECTORIES(${GSL_INCLUDE_DIRS})
+
+set(SOURCE_FILES_ONE one.cpp)
+add_executable(One ${SOURCE_FILES_ONE})
+
+set(SOURCE_FILES_TWO two.cpp)
+add_executable(Two ${SOURCE_FILES_TWO})
+
+set(SOURCE_FILES_THREE three.cpp)
+add_executable(Three ${SOURCE_FILES_THREE})
+
+TARGET_LINK_LIBRARIES(One ${GSL_LIBRARIES})
+TARGET_LINK_LIBRARIES(Two ${GSL_LIBRARIES})
+TARGET_LINK_LIBRARIES(Three ${GSL_LIBRARIES})
