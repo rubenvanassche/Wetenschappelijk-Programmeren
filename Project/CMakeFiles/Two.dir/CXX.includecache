@@ -19,6 +19,10 @@ gsl/gsl_spline.h
 -
 gsl/gsl_multifit.h
 -
+gsl/gsl_linalg.h
+-
+gsl/gsl_chebyshev.h
+-
 
 /Users/Ruben/Documents/school/Wetenschappelijk-Programmeren/Project/utils.h
 math.h
@@ -40,6 +44,18 @@ iterator
 string
 -
 sstream
+-
+
+/usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_blas.h
+gsl/gsl_vector.h
+-
+gsl/gsl_matrix.h
+-
+gsl/gsl_blas_types.h
+-
+
+/usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_blas_types.h
+gsl/gsl_cblas.h
 -
 
 /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_block_char.h
@@ -126,6 +142,16 @@ stdlib.h
 gsl/gsl_errno.h
 -
 
+/usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_cblas.h
+stddef.h
+-
+
+/usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_chebyshev.h
+gsl/gsl_math.h
+-
+gsl/gsl_mode.h
+-
+
 /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_check_range.h
 stdlib.h
 -
@@ -150,6 +176,24 @@ stdlib.h
 gsl/gsl_inline.h
 -
 gsl/gsl_types.h
+-
+
+/usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_linalg.h
+stdlib.h
+-
+gsl/gsl_mode.h
+-
+gsl/gsl_permutation.h
+-
+gsl/gsl_vector.h
+-
+gsl/gsl_matrix.h
+-
+gsl/gsl_math.h
+-
+gsl/gsl_inline.h
+-
+gsl/gsl_blas.h
 -
 
 /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_machine.h
@@ -406,6 +450,10 @@ gsl/gsl_vector_ushort.h
 gsl/gsl_inline.h
 -
 
+/usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_mode.h
+gsl/gsl_inline.h
+-
+
 /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_multifit.h
 stdlib.h
 -
@@ -419,6 +467,18 @@ gsl/gsl_types.h
 -
 
 /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_nan.h
+
+/usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_permutation.h
+stdlib.h
+-
+gsl/gsl_types.h
+-
+gsl/gsl_errno.h
+-
+gsl/gsl_inline.h
+-
+gsl/gsl_check_range.h
+-
 
 /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_pow_int.h
 gsl/gsl_inline.h

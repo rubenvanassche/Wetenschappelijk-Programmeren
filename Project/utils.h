@@ -87,6 +87,33 @@ namespace Utils{
         out  << a_value;
         return out.str();
     }
+
+    void matrixToLatex(gsl_matrix* A, int size, int precision){
+        std::cout.precision(precision);
+
+        std::cout << "\\begin{matrix}" << std::endl;
+
+        for(int i = 0;i < size;i++){
+            for(int j = 0;j < size;j++){
+
+                double item = gsl_matrix_get(A, i, j);
+                if(j + 1 == size){
+                    std::cout << item;
+                }else{
+                    std::cout << item << " & ";
+                }
+
+            }
+
+            if(i+1 == size){
+                std::cout << std::endl;
+            }else{
+                std::cout << " \\\\" << std::endl;
+            }
+        }
+
+        std::cout << "\\end{matrix}" << std::endl;
+    }
 };
 
 

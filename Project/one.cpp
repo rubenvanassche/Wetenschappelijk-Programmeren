@@ -7,6 +7,36 @@
 #include <gsl/gsl_errno.h>
 #include <gsl/gsl_spline.h>
 #include <gsl/gsl_multifit.h>
+#include <gsl/gsl_linalg.h>
+
+double calculateConditionNumber(gsl_matrix* input, int size){
+    gsl_vector* vector = gsl_vector_alloc(size);
+    gsl_matrix* tempmatrix = gsl_matrix_alloc(size,size);
+    gsl_matrix* m = gsl_matrix_alloc(size,size);
+    gsl_matrix_memcpy(m, input);
+    gsl_vector* work = gsl_vector_alloc(size);
+
+    gsl_linalg_SV_decomp(m, tempmatrix, vector, work);
+
+    double min = std::numeric_limits<double>::max();
+    double max = -std::numeric_limits<double>::min();
+    for(int i = 0; i < size;i++){
+        double result = gsl_vector_get(vector, i);
+        if(result > max){
+            max = result;
+        }
+
+        if(result < min){
+            min = result;
+        }
+    }
+
+    gsl_vector_free(vector);
+    gsl_matrix_free(tempmatrix);
+    gsl_vector_free(work);
+
+    return max/min;
+}
 
 // n >= 2
 std::list<std::pair<double, double>> getDataPoints(int n){
@@ -154,7 +184,49 @@ void leastSquares(int n){
 
     gsl_vector_free(y);
     gsl_matrix_free(X);
+}
 
+void useGEPP(int n){
+    std::vector<std::pair<double, double>> points;
+    for(auto point : getDataPoints(13)){
+        points.push_back(std::make_pair(point.first, point.second));
+    }
+
+    gsl_matrix* A = gsl_matrix_alloc(n,n);
+    for(int i = 0;i < n;i++){
+        for(int j = 0;j < n;j++){
+            gsl_matrix_set(A, i, j, pow(points.at(i).first, j));
+        }
+    }
+
+    double conditionNumber = calculateConditionNumber(A, n);
+    std::cout << "Matrix A has condition number: " << conditionNumber << std::endl;
+
+    gsl_vector *y = gsl_vector_alloc(n);
+    for(int i =0;i < n;i++){
+        gsl_vector_set(y, i, points.at(i).second);
+    }
+
+    gsl_vector *x = gsl_vector_alloc(n);
+    int s;
+    gsl_permutation * p = gsl_permutation_alloc(n);
+
+    gsl_linalg_LU_decomp (A, p, &s);
+    gsl_linalg_LU_solve (A, p, y, x);
+
+    //Print the function values
+    std::cout << "GEPP x results : " << std::endl;
+    for(int i = 0;i < n;i++){
+        std::cout << gsl_vector_get(x, i) << std::endl;
+    }
+
+    std::cout << "Matrix A : " << std::endl;
+    Utils::matrixToLatex(A, n, 2);
+
+    gsl_permutation_free(p);
+    gsl_vector_free(x);
+    gsl_vector_free(y);
+    gsl_matrix_free(A);
 }
 
 int main() {
@@ -162,4 +234,5 @@ int main() {
     interpolate(3, "Polynomial",  gsl_interp_polynomial);
     interpolate(3, "Spline",  gsl_interp_cspline);
     leastSquares(13);
+    useGEPP(13);
 }

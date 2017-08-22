@@ -4,6 +4,8 @@
 CMakeFiles/Two.dir/two.cpp.o
  /Users/Ruben/Documents/school/Wetenschappelijk-Programmeren/Project/two.cpp
  /Users/Ruben/Documents/school/Wetenschappelijk-Programmeren/Project/utils.h
+ /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_blas.h
+ /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_blas_types.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_block_char.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_block_complex_double.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_block_complex_float.h
@@ -18,11 +20,14 @@ CMakeFiles/Two.dir/two.cpp.o
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_block_uint.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_block_ulong.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_block_ushort.h
+ /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_cblas.h
+ /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_chebyshev.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_check_range.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_complex.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_errno.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_inline.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_interp.h
+ /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_linalg.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_machine.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_math.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_matrix.h
@@ -41,8 +46,10 @@ CMakeFiles/Two.dir/two.cpp.o
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_matrix_ulong.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_matrix_ushort.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_minmax.h
+ /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_mode.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_multifit.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_nan.h
+ /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_permutation.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_pow_int.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_precision.h
  /usr/local/Cellar/gsl/2.2.1/include/gsl/gsl_spline.h
