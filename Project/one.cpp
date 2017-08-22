@@ -141,7 +141,6 @@ void leastSquares(int n){
         counter++;
     }
 
-    Utils::print_matrix(X);
 
     gsl_multifit_linear_workspace * work = gsl_multifit_linear_alloc(n, 3);
     gsl_multifit_linear(X, y, q, cov, &chisq, work);
@@ -205,6 +204,7 @@ void useGEPP(int n){
     gsl_vector *y = gsl_vector_alloc(n);
     for(int i =0;i < n;i++){
         gsl_vector_set(y, i, points.at(i).second);
+        std::cout << points.at(i).second << std::endl;
     }
 
     gsl_vector *x = gsl_vector_alloc(n);
@@ -233,6 +233,8 @@ int main() {
     std::cout.precision(20);
     interpolate(3, "Polynomial",  gsl_interp_polynomial);
     interpolate(3, "Spline",  gsl_interp_cspline);
-    leastSquares(13);
+    leastSquares(226);
     useGEPP(13);
+
+    std::cout << std::numeric_limits<double>::epsilon() << std::endl;
 }

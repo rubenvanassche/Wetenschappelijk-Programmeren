@@ -69,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="one.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="one.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/one.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="223" column="34" lean-forward="false" selection-start-line="223" selection-start-column="34" selection-end-line="223" selection-end-column="34" />
+            <state relative-caret-position="333">
+              <caret line="238" column="59" lean-forward="false" selection-start-line="238" selection-start-column="59" selection-end-line="238" selection-end-column="59" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#81#107#0" expanded="true" />
@@ -82,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="utils.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="110" column="31" lean-forward="false" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
+            <state relative-caret-position="146">
+              <caret line="102" column="29" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="29" />
               <folding>
                 <element signature="e#104#121#0" expanded="true" />
                 <element signature="e#1685#1726#0" expanded="true" />
@@ -99,6 +99,12 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>out  &lt;&lt; a_value;</find>
+      <find>cout</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -110,8 +116,8 @@
         <option value="$PROJECT_DIR$/Twographs/PolynomialEquidistant-interpolated.dat" />
         <option value="$PROJECT_DIR$/Twographs/graphs.gnuplot" />
         <option value="$PROJECT_DIR$/two.cpp" />
-        <option value="$PROJECT_DIR$/one.cpp" />
         <option value="$PROJECT_DIR$/utils.h" />
+        <option value="$PROJECT_DIR$/one.cpp" />
       </list>
     </option>
   </component>
@@ -368,12 +374,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503229051572</updated>
-      <workItem from="1503229054493" duration="40975000" />
+      <workItem from="1503229054493" duration="45712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40975000" />
+    <option name="totallyTimeSpent" value="45712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -587,26 +593,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/one.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="223" column="34" lean-forward="false" selection-start-line="223" selection-start-column="34" selection-end-line="223" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#81#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="110" column="31" lean-forward="false" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
+        <state relative-caret-position="146">
+          <caret line="102" column="29" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="29" />
           <folding>
             <element signature="e#104#121#0" expanded="true" />
             <element signature="e#1685#1726#0" expanded="true" />
             <element signature="e#1953#1968#0" expanded="true" />
             <element signature="e#2164#2176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/one.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="238" column="59" lean-forward="false" selection-start-line="238" selection-start-column="59" selection-end-line="238" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#81#107#0" expanded="true" />
           </folding>
         </state>
       </provider>
