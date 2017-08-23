@@ -119,6 +119,82 @@ De functie die er wel uit springt is de kleinste kwadraten parabool benadering, 
 \\
 \\
 Er is geen samenvattende plot van de foutenkrommes van de 3 benaderingen omdat deze niet duidelijk genoeg zou zijn en aan de hand van de plot van de 3 benaderingen al veel uitgelegd kan worden.
+\section{Opgave 3}
+Functie $f(x)$ is gelijk aan -1 op het interval [-$\pi$, 0] en +1 op het interval [0, $\pi$], bereken enkele benaderingen. Maak gebruik van $n \geq 120$ equidistante punten.
+\subsection{Veelterm Interpolanten}
+Er werd gevraagd om enkele veelterm interpolanten te berekenen. Om te bepalen welke graad te gebruiken berekenen we telkens de relative fout : 
+$$ \left | \frac{x_{berekend} - x}{x}  \right |$$
+Uiteindelijk kiezen we 2 manieren voor het selecteren van punten(zie opgave 1, hoe meer punten geselecteerd, hoe harder het runghe fenomeen kan optreden).
+\\
+\\ 
+Ten eerste selecteren we punten op een equidistante afstand van elkaar, we laten deze afstand steeds kleiner worden en dus in het begin worden niet alle punten gebruikt. Wanneer we deze procedure uitvoeren op 241 punten valt op dat de relatieve fout het kleinst is wanneer we een polynomische interpolant van graad 240 construeren met 241 datapunten. Dit levert relatieve fout op van : 4.2881891672892731293 . 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{../Twographs/PolynomialEquidistant-interpolated}
+\caption{Een polynomische equidistante interpolant van f(x) van graad 240}
+\end{figure}
+\begin{figure}[H]
+\end{figure}
+De interpolant benadert de functie vrij goed behalve rond de x-waarde 0.
+\\
+\\
+Een andere manier van punten selecteren is door deze niet equidistant te kiezen maar random over het interval te selecteren. Wanneer we deze procedure toepassen verkijgen we een polynoom van de graad 183 met 182 datapunten waarbij de relative fout 2.5545165758846741788 is. We zien dit ook op de plot van de interpolant:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{../Twographs/PolynomialRandom-interpolated}
+\caption{Een polynomische random interpolant van f(x) van graad 240}
+\end{figure}
+\begin{figure}[H]
+\end{figure}
+Waarbij de equidistante punten de y-waarden rond 0 nog tot ongeveer 1.3 lopen door osccilaties, lopen ze bij random gekozen punten maar tot 1.1 een duidelijk verschil! Daarom kiezen we dus voor een polynomishce interpolant met random gekozen punten inplaats van equidistante punten.
+\subsection{Kleinste kwadraten veeltermbenadering}
+TODO
+\subsection{Trigonometrische veelterminterpolant}
+Voor de trigoniometrische veelterminterpolant berekenen we enkele coefficienten met $i = 1 \hdots m$:
+$$
+a_{i} = \frac{2}{n}\sum^{n - 1}_{k = 0}(y_{k}*cos(i * x_{k})) 
+$$
+$$
+b_{i} = \frac{2}{n}\sum^{n - 1}_{k = 0}(y_{k}*sin(i * x_{k})) 
+$$
+Bij trigonometrische veelterminterpolatie stellen we dat n = 2*m dus in dit geval kiezen we voor n = 122 en m = 61. Hierdoor verkrijgen we een interpolant met als relatieve fout : 19.13715151604820619. Welke tamelijk groot is t.o.v. de polynomische interpolant. Hieronder een plot:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{../Twographs/trioI-interpolated}
+\caption{Een trigonometrische veelterminterpolant van f(x)}
+\end{figure}
+\begin{figure}[H]
+\end{figure}
+Om de plot te te tekenen wordt gebruik gemaakt van volgende functie : 
+$$
+p(x) = \frac{a_{0}}{2} + \sum_{i = 1}^{m}(a_{i} * cos(i * x)) + \sum_{i = 1}^{m}(b_{i} * sin(i * x))
+$$ 
+Wat handig is dat de opgave bestaat uit equidistante punten : TODO
+\subsection{Trigonometrische kleinste-kwadraten approximant}
+Hierbij stellen we dat $n \geq 2*m$ en dus hebben we gekozen voor n = 121 en m = 25. We kiezen hierbij voor een oneven aantal termen(25) hierbij worden de coefficienten $a_{i} en b_{i}$ niet meer berekend van $i = 1 \hdots m$ maar van $i = 1 \hdots m-1$. Tevens komt er een extra factor bij : $\frac{1}{2}*a_{m}*cos(m * x)$. Dit levert volgende functie op:
+$$
+p(x) = \frac{a_{0}}{2} + \sum_{i = 1}^{m-1}(a_{i} * cos(i * x)) + \sum_{i = 1}^{m-1}(b_{i} * sin(i * x)) + \frac{1}{2}*a_{m}*cos(m * x)
+$$
+Dit verschil tussen een oneven/even aantal termen zorgt ervoor dat : TODO
+\\
+\\
+De relative fout van deze benadering is : 34.455640624730698107. Wanneer we de functie $p(x)$ plotten krijgen we volgende functie : 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{../Twographs/trioLS-interpolated}
+\caption{Trigonometrische kleinste-kwadraten approximant van f(x)}
+\end{figure}
+\begin{figure}[H]
+\end{figure}
+\subsection{Vergelijken}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{../Twographs/All}
+\caption{Alle benaderingen van opgave 4}
+\end{figure}
+\begin{figure}[H]
+\end{figure}
+Wanneer we nu alle benaderingen naast elkaar zetten op een afbeelding zien we dat de Polynomische Interpolant met random gekozen punten f(x) het beste benadert, gevolgd door de Polynomische interpolant met equidistante punten. Daarna de trigonometrische interpolant en vervolgens de Trigonometrische kleinste-kwadraten approximant. Dit zagen we ook eerder in de fouten die de beanderingen hadden.
 \section{Opgave 4}
 Gebruik de n+1 datapunten die de polynomische interpolant p(x) in opgave 1 opleverde en stel een stelsel interpolatievoorwaarden op, bereken het conditiegetal en los het op met GEPP.
 Het stelsel zal volgende vorm hebben:
@@ -223,7 +299,33 @@ C =  \begin{bmatrix}
 2.0172966316920489529e-09 \\
 \end{bmatrix} 
 $$
+\subsection{Opgave 5}
+Bereken het volume van een cylinder met als grondvlak $\Omega  = (x-0.5)^{2} + (y-0.5)^{2} \leq 0.25 $ en als hoogte $ln(x + y)$ tot 2 beduidende cijfers correct.
+\subsubsection{MAPLE}
+Om te kunnen weten of de berekende oplossing tot 2 beduidende cijfers correct is wordt gebruik gemaakt van MAPLE om een exacte oplossing voor het volume van de cylinder te vinden. Dit kan d.m.v. volgende code:
+\begin{lstlisting}
+with(VectorCalculus);
+int(abs(ln(x+y)), [x, y] = Circle({0.5,0.5}, .5));
+\end{lstlisting}
+Wanneer we dit uitrekenen bekomen we dat het volume $I = 0.2550197403$.
+\subsubsection{Berekening}
+Om het volume te bereken maken we gebruik van Monte Carlo Integratie deze gebruikt random samples en kijkt of deze (x, y) coordinaten in het volume liggen of niet. Om deze conditie te checken geven we volgende functie aan GSL mee :
+\begin{lstlisting}
+double func (double x[], size_t dim, void * p){
+    if (dim != 2)
+    {
+        fprintf (stderr, "error: dim != 2");
+        abort ();
+    }
 
+    if(pow(x[0] - 0.5, 2) + pow(x[1] - 0.5, 2) <= 0.25){
+        return fabs(log(x[0] + x[1]));
+    }else{
+        return 0.0;
+    }
+}
+\end{lstlisting}
+Indien het(x,y) coordinaat in het grondvlak ligt, zal het een hoogte mee krijgen bepaald door$ln(x+y)$ ligt het niet in het grondvlak, dan krijgt het de hoogte 0 mee. Wanneer we dit uitrekenen en met een seed = 123 en random generator = mrg. Is met 691 samples de inhoud gelijk aan 0.25936620629454121278 wat de gelijkenis van 0.25 heeft met de MAPLE berekening.
 \section{Code}
 \textbf{../one.cpp - Opgave 1, 2 en 4}
 \lstinputlisting{../one.cpp}

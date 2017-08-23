@@ -56,7 +56,7 @@ double calculate(int samples){
 int main() {
     std::cout.precision(20);
 
-    int samples = 10;
+    int samples = 1;
     while(true){
         double result = calculate(samples);
         std::cout << "Samples: " << samples << ", result: " << result << std::endl;

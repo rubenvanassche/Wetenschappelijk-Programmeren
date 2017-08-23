@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  23 AUG 2017 01:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.18)  23 AUG 2017 02:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,45 +346,113 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--122
  []
 
 [6 <../Onegraphs/All.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 146--170
+<../Twographs/PolynomialEquidistant-interpolated.png, id=46, 602.25pt x 602.25p
+t>
+File: ../Twographs/PolynomialEquidistant-interpolated.png Graphic file (type pn
+g)
+ <use ../Twographs/PolynomialEquidistant-interpolated.png>
+Package pdftex.def Info: ../Twographs/PolynomialEquidistant-interpolated.png us
+ed on input line 133.
+(pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--170
+Underfull \hbox (badness 10000) in paragraph at lines 126--135
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 203--209
+<../Twographs/PolynomialRandom-interpolated.png, id=51, 602.25pt x 602.25pt>
+File: ../Twographs/PolynomialRandom-interpolated.png Graphic file (type png)
+
+<use ../Twographs/PolynomialRandom-interpolated.png>
+Package pdftex.def Info: ../Twographs/PolynomialRandom-interpolated.png used on
+ input line 144.
+(pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--146
+
+ []
+
+[8 <../Twographs/PolynomialEquidistant-interpolated.png> <../Twographs/Polynomi
+alRandom-interpolated.png>]
+<../Twographs/trioI-interpolated.png, id=57, 602.25pt x 602.25pt>
+File: ../Twographs/trioI-interpolated.png Graphic file (type png)
+
+<use ../Twographs/trioI-interpolated.png>
+Package pdftex.def Info: ../Twographs/trioI-interpolated.png used on input line
+ 163.
+(pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
+ [9 <../Twographs/trioI-interpolated.png>] <../Twographs/trioLS-interpolated.pn
+g, id=62, 602.25pt x 602.25pt>
+File: ../Twographs/trioLS-interpolated.png Graphic file (type png)
+
+<use ../Twographs/trioLS-interpolated.png>
+Package pdftex.def Info: ../Twographs/trioLS-interpolated.png used on input lin
+e 184.
+(pdftex.def)             Requested size: 180.67639pt x 180.67639pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--186
+
+ []
+
+<../Twographs/All.png, id=63, 1505.625pt x 1505.625pt>
+File: ../Twographs/All.png Graphic file (type png)
+
+<use ../Twographs/All.png>
+Package pdftex.def Info: ../Twographs/All.png used on input line 192.
+(pdftex.def)             Requested size: 451.691pt x 451.691pt.
+
+Overfull \hbox (106.691pt too wide) in paragraph at lines 192--193
+ [][] 
+ []
+
+[10 <../Twographs/trioLS-interpolated.png>]
+Overfull \hbox (12.22281pt too wide) in paragraph at lines 197--198
+\OT1/cmr/m/n/10 Daarna de tri-go-no-me-tri-sche in-ter-po-lant en ver-vol-gens 
+de Tri-go-no-me-tri-sche kleinste-
+ []
+
+[11 <../Twographs/All.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 222--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--209
+Underfull \hbox (badness 10000) in paragraph at lines 222--246
 
  []
 
-[8] (../one.cpp
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 1.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 279--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--285
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 308.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 308.
+ [13]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 321.
 
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 321.
+ (../one.cpp
 Overfull \hbox (21.00372pt too wide) in paragraph at lines 12--13
 [][][][][][][][][][][][][][][][] 
  []
 
-[9]
+[14]
 Overfull \hbox (3.00354pt too wide) in paragraph at lines 42--43
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -399,7 +467,7 @@ Overfull \hbox (9.0036pt too wide) in paragraph at lines 62--64
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-[10]
+[15]
 Overfull \hbox (27.00378pt too wide) in paragraph at lines 83--84
 [][][][][][][][][][][][][][][][][][][] 
  []
@@ -439,7 +507,7 @@ Overfull \hbox (21.00372pt too wide) in paragraph at lines 117--118
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[11]
+[16]
 Overfull \hbox (9.0036pt too wide) in paragraph at lines 135--136
 [][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -474,12 +542,12 @@ Overfull \hbox (207.00562pt too wide) in paragraph at lines 178--179
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-
+[17]
 Overfull \hbox (123.00476pt too wide) in paragraph at lines 179--181
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-[12]
+
 Overfull \hbox (63.00415pt too wide) in paragraph at lines 191--192
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -499,7 +567,7 @@ Overfull \hbox (153.00507pt too wide) in paragraph at lines 202--204
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[13]
+[18]
 Overfull \hbox (69.00421pt too wide) in paragraph at lines 239--240
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -519,7 +587,7 @@ Overfull \hbox (27.00378pt too wide) in paragraph at lines 28--29
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[14]
+[19]
 Overfull \hbox (441.008pt too wide) in paragraph at lines 46--47
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][]
@@ -541,7 +609,7 @@ Overfull \hbox (225.0058pt too wide) in paragraph at lines 69--70
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[15]
+[20]
 Overfull \hbox (87.0044pt too wide) in paragraph at lines 91--92
 [][][][][][][][][][][][][][][][][] 
  []
@@ -583,7 +651,7 @@ Overfull \hbox (27.00378pt too wide) in paragraph at lines 133--136
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-
+[21]
 Overfull \hbox (129.00482pt too wide) in paragraph at lines 136--137
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -593,7 +661,7 @@ Overfull \hbox (15.00366pt too wide) in paragraph at lines 137--139
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-[16]
+
 Overfull \hbox (33.00385pt too wide) in paragraph at lines 139--140
 [][][][][][][][][][][][][][][][] 
  []
@@ -626,12 +694,12 @@ Overfull \hbox (51.00403pt too wide) in paragraph at lines 175--176
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
+[22]
 Overfull \hbox (87.0044pt too wide) in paragraph at lines 187--188
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[17]
+
 Overfull \hbox (3.00354pt too wide) in paragraph at lines 191--193
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -661,12 +729,12 @@ Overfull \hbox (3.00354pt too wide) in paragraph at lines 235--236
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
+[23]
 Overfull \hbox (33.00385pt too wide) in paragraph at lines 238--240
 [][][][][][][][][][][][][][][][] 
  []
 
-[18]
+
 Overfull \hbox (207.00562pt too wide) in paragraph at lines 243--245
 [][][][][][][][][][][][][][][][][][][] 
  []
@@ -714,7 +782,7 @@ Overfull \hbox (333.0069pt too wide) in paragraph at lines 284--285
 ][][][][][][][][] 
  []
 
-[19]
+[24]
 Overfull \hbox (39.0039pt too wide) in paragraph at lines 289--290
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -744,7 +812,7 @@ Overfull \hbox (171.00525pt too wide) in paragraph at lines 325--326
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[20]
+[25]
 Overfull \hbox (27.00378pt too wide) in paragraph at lines 354--356
 [][][][][][][][][][][][][][][][][][][] 
  []
@@ -785,7 +853,7 @@ Overfull \hbox (33.00385pt too wide) in paragraph at lines 383--384
 [][][][][][][][][][][][][][][][] 
  []
 
-
+[26]
 Overfull \hbox (165.00519pt too wide) in paragraph at lines 386--388
 [][][][][][][][][][][][][][][][][][][] 
  []
@@ -796,14 +864,14 @@ Overfull \hbox (429.00787pt too wide) in paragraph at lines 388--389
 ][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[21]) (../three.cpp
+) (../three.cpp
 Missing character: There is no â in font cmr10!
 Missing character: There is no Ÿ in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no Ÿ in font cmr10!
 Missing character: There is no © in font cmr10!
- [22]
+ [27]
 Overfull \hbox (93.00446pt too wide) in paragraph at lines 49--50
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -813,15 +881,15 @@ Overfull \hbox (153.00507pt too wide) in paragraph at lines 62--64
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [23] (./Report.aux) ) 
+) [28] (./Report.aux) ) 
 Here is how much of TeX's memory you used:
- 4146 strings out of 493089
- 57305 string characters out of 6134841
- 154043 words of memory out of 5000000
- 7550 multiletter control sequences out of 15000+600000
+ 4173 strings out of 493089
+ 58298 string characters out of 6134841
+ 155043 words of memory out of 5000000
+ 7572 multiletter control sequences out of 15000+600000
  11503 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,32p,561b,1376s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,9n,32p,561b,1390s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
@@ -834,10 +902,10 @@ cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
 mr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
 .pfb>
-Output written on Report.pdf (23 pages, 316507 bytes).
+Output written on Report.pdf (28 pages, 470186 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 162 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

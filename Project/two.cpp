@@ -97,7 +97,7 @@ std::vector<std::pair<double, double> > polynomialInterpolant(std::vector<std::p
         double yi = gsl_spline_eval(interpolation, xi, acc);
 
 
-        *error += fabs(yi - function(xi));
+        *error += fabs((yi - function(xi))/function(xi));
     }
 
 
@@ -237,7 +237,7 @@ void calculatePolynomialLeastSquares(){
 
         interpolatedFunction.push_back(std::make_pair(xi, yi));
 
-        error += fabs(yi - function(xi));
+        error += fabs((yi - function(xi))/function(xi));
     }
 
     Utils::writePointsFile(interpolatedFunction, "Twographs/PolynomialLS-interpolated.dat");
@@ -356,7 +356,7 @@ void calculateTriogoniometricLeastSquares(){
     for(double xi = -Utils::PI;xi <= Utils::PI;xi += 0.01){
         double yi = triGoniometric(points, m, xi);
 
-        error += fabs(yi - function(xi));
+        error += fabs((yi - function(xi))/function(xi));
 
         interpolatedFunction.push_back(std::make_pair(xi, yi));
     }
@@ -378,7 +378,7 @@ void calculateTriogoniometricInterpolant(){
     for(double xi = -Utils::PI;xi <= Utils::PI;xi += 0.01){
         double yi = triGoniometric(points, m, xi);
 
-        error += fabs(yi - function(xi));
+        error += fabs((yi - function(xi))/function(xi));
 
         interpolatedFunction.push_back(std::make_pair(xi, yi));
     }

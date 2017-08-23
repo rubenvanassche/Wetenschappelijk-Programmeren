@@ -29,12 +29,22 @@
       <file leaf-file-name="two.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/two.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="391" column="4" lean-forward="false" selection-start-line="391" selection-start-column="4" selection-end-line="391" selection-end-column="28" />
+            <state relative-caret-position="-597">
+              <caret line="335" column="18" lean-forward="false" selection-start-line="335" selection-start-column="18" selection-end-line="335" selection-end-column="46" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#81#108#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="three.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/three.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="one.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="one.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/one.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
@@ -92,6 +102,8 @@
                 <element signature="e#1685#1726#0" expanded="true" />
                 <element signature="e#1953#1968#0" expanded="true" />
                 <element signature="e#2164#2176#0" expanded="true" />
+                <marker date="1503431628000" expanded="true" signature="324:3055" ph="{...}" />
+                <marker date="1503431628000" expanded="true" signature="2423:3053" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -103,6 +115,7 @@
     <findStrings>
       <find>out  &lt;&lt; a_value;</find>
       <find>cout</find>
+      <find>fabs</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -111,13 +124,13 @@
         <option value="$PROJECT_DIR$/utils.h.hh" />
         <option value="$PROJECT_DIR$/Onegraphs/graphs.gnuplot" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/three.cpp" />
         <option value="$PROJECT_DIR$/Onegraphs/test.dat" />
         <option value="$PROJECT_DIR$/Twographs/PolynomialEquidistant-interpolated.dat" />
         <option value="$PROJECT_DIR$/Twographs/graphs.gnuplot" />
-        <option value="$PROJECT_DIR$/two.cpp" />
         <option value="$PROJECT_DIR$/utils.h" />
         <option value="$PROJECT_DIR$/one.cpp" />
+        <option value="$PROJECT_DIR$/two.cpp" />
+        <option value="$PROJECT_DIR$/three.cpp" />
       </list>
     </option>
   </component>
@@ -166,20 +179,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Onegraphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -210,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.One">
+  <component name="RunManager" selected="Application.Three">
     <configuration default="true" type="CLion_Remote" factoryName="GDB Remote Debug" remoteCommand="" symbolFile="" sysroot="">
       <method />
     </configuration>
@@ -374,12 +373,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503229051572</updated>
-      <workItem from="1503229054493" duration="45712000" />
+      <workItem from="1503229054493" duration="49179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45712000" />
+    <option name="totallyTimeSpent" value="49179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -416,8 +415,13 @@
           <line>179</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/two.cpp</url>
+          <line>378</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -547,17 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/three.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-            <element signature="e#81#106#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/include/c++/v1/vector">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -582,17 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/two.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="391" column="4" lean-forward="false" selection-start-line="391" selection-start-column="4" selection-end-line="391" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#81#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -602,6 +584,8 @@
             <element signature="e#1685#1726#0" expanded="true" />
             <element signature="e#1953#1968#0" expanded="true" />
             <element signature="e#2164#2176#0" expanded="true" />
+            <marker date="1503431628000" expanded="true" signature="324:3055" ph="{...}" />
+            <marker date="1503431628000" expanded="true" signature="2423:3053" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -614,6 +598,25 @@
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#81#107#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/two.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-597">
+          <caret line="335" column="18" lean-forward="false" selection-start-line="335" selection-start-column="18" selection-end-line="335" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#81#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/three.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
