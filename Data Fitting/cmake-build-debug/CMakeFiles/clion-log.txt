@@ -1,0 +1,6 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Fitting"
+-- Could NOT find PkgConfig (missing:  PKG_CONFIG_EXECUTABLE) 
+-- Found GSL: /usr/local/include (found version "2.4") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Fitting/cmake-build-debug
