@@ -135,7 +135,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:STRING=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Data_Fitting
+CMAKE_PROJECT_NAME:STATIC=Data_Smoothing
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -191,6 +191,12 @@ Data_Fitting_BINARY_DIR:STATIC=/Users/ruben/Documents/School/Wetenschappelijk-Pr
 
 //Value Computed by CMake
 Data_Fitting_SOURCE_DIR:STATIC=/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Smoothing
+
+//Value Computed by CMake
+Data_Smoothing_BINARY_DIR:STATIC=/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Smoothing/cmake-build-debug
+
+//Value Computed by CMake
+Data_Smoothing_SOURCE_DIR:STATIC=/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Smoothing
 
 //Path to a library.
 GSL_CBLAS_LIBRARY:FILEPATH=/usr/local/Cellar/gsl/2.4/lib/libgslcblas.dylib

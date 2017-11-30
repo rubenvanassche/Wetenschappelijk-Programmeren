@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.cpp
+/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.cpp
 PointsWriter.h
-/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.h
+/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.h
 
-/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.h
+/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.h
 string
 -
 fstream
@@ -18,7 +18,7 @@ fstream
 list
 -
 
-/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/Utils.h
+/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Smoothing/Utils.h
 gsl/gsl_linalg.h
 -
 iostream
@@ -28,7 +28,7 @@ gsl/gsl_matrix.h
 gsl/gsl_vector_double.h
 -
 
-/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/main.cpp
+/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Smoothing/main.cpp
 iostream
 -
 math.h
@@ -36,7 +36,7 @@ math.h
 list
 -
 PointsWriter.h
-/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.h
+/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.h
 gsl/gsl_rng.h
 -
 gsl/gsl_linalg.h
@@ -46,7 +46,7 @@ gsl/gsl_sf_legendre.h
 gsl/gsl_vector_double.h
 -
 Utils.h
-/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/Utils.h
+/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Data Smoothing/Utils.h
 
 /usr/local/Cellar/gsl/2.4/include/gsl/gsl_blas.h
 gsl/gsl_vector.h
