@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.cpp
+PointsWriter.h
+/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.h
+
+/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.h
+string
+-
+fstream
+-
+list
+-
+
+/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/main.cpp
+iostream
+-
+math.h
+-
+list
+-
+PointsWriter.h
+/Users/ruben/documents/School/Wetenschappelijk-Programmeren/Data Smoothing/PointsWriter.h
+
