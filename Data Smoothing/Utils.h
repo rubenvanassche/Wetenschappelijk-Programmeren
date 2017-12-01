@@ -34,6 +34,30 @@ void printMatrix(gsl_matrix * m, bool latex = false){
     }
 }
 
+void printMatrixMatlab(gsl_matrix * m){
+    int rows = m->size1;
+    int columns = m->size2;
+    std::cout << "[";
+    for (int i = 0; i < rows; i++) {
+        std::cout << "[";
+        for (int j = 0; j < columns; j++) {
+            if(j == columns - 1){
+                std::cout << gsl_matrix_get(m, i, j);
+            }else{
+                std::cout << gsl_matrix_get(m, i, j) << ",";
+            }
+
+        }
+        if(i == rows - 1){
+            std::cout << "]";
+        }else{
+            std::cout << "];";
+        }
+    }
+    std::cout << "]" << std::endl;
+
+}
+
 void printVector(gsl_vector * v, bool latex = false){
     int rows = v->size;
 
@@ -44,6 +68,18 @@ void printVector(gsl_vector * v, bool latex = false){
             std::cout << gsl_vector_get (v, i) << std::endl;
         }
 
+    }
+}
+
+void flattenVector(gsl_vector* v){
+    int rows = v->size;
+
+    for(int i = 0;i < rows;i++){
+        if(i == rows-1){
+            std::cout << gsl_vector_get(v, i) << std::endl;
+        }else{
+            std::cout << gsl_vector_get(v, i) << ", ";
+        }
     }
 }
 
@@ -69,14 +105,17 @@ double conditionNumber(gsl_matrix* m){
         //throw new std::runtime_error("Can only calculate the condition number of an square matrix");
     }
 
-    int size1 = m->size1;
-    int size2 = m->size2;
+    gsl_matrix* r = gsl_matrix_alloc(m->size1, m->size2);
+    gsl_matrix_memcpy(r,m);
 
-    gsl_vector* v = gsl_vector_alloc(size1);
-    gsl_matrix* temp = gsl_matrix_alloc(size2,size1);
-    gsl_vector* w = gsl_vector_alloc(size1);
+    int size1 = r->size1;
+    int size2 = r->size2;
 
-    gsl_linalg_SV_decomp(m, temp, v, w);
+    gsl_vector* v = gsl_vector_alloc(size2);
+    gsl_matrix* temp = gsl_matrix_alloc(size2,size2);
+    gsl_vector* w = gsl_vector_alloc(size2);
+
+    gsl_linalg_SV_decomp(r, temp, v, w);
 
     double min = std::numeric_limits<double>::max();
     double max = -std::numeric_limits<double>::min();
@@ -95,6 +134,7 @@ double conditionNumber(gsl_matrix* m){
     gsl_vector_free(v);
     gsl_matrix_free(temp);
     gsl_vector_free(w);
+    gsl_matrix_free(r);
 
     return max/min;
 }

@@ -17,11 +17,21 @@ double yFunction(double x){
     return 1 + 2*x + pow(x, 2);
 }
 
-double eval(gsl_vector* v, double x){
+double eval(gsl_vector* v, double x, Basis basis){
     double out = 0;
 
-    for(int i = 0;i < v->size;i++){
-        out += gsl_vector_get(v, i) * pow(x, i);
+    if(basis == MONOMIAL) {
+        out += gsl_vector_get(v, 0)*1;
+        out += gsl_vector_get(v, 1)*x;
+        out += gsl_vector_get(v, 2)*pow(x, 2);
+    }else if(basis == LEGENDRE){
+        out += gsl_vector_get(v, 0)*1;
+        out += gsl_vector_get(v, 1)*gsl_sf_legendre_P2(x);
+        out += gsl_vector_get(v, 2)*gsl_sf_legendre_P2(x);
+    }else if(basis == CHEBYSHEV){
+        out += gsl_vector_get(v, 0)*1;
+        out += gsl_vector_get(v, 1)*x;
+        out += gsl_vector_get(v, 2)*(2*pow(x, 2) - 1);
     }
 
     return out;
@@ -101,11 +111,18 @@ gsl_vector* smooth(const double* originalPoints, const double* xPoints, const do
     gsl_matrix_memcpy(A2,A);
 
     // Check the condition number
-    //std::cout << "Condition Number : " << conditionNumber(A) << std::endl;
+    std::cout << "Condition Number : " << conditionNumber(A) << std::endl;
+
     gsl_linalg_QR_decomp(A, tau);
     gsl_linalg_QR_lssolve(A, tau, y, b, residual);
 
-    std::cout << gsl_vector_get(b, 0) << " + " << gsl_vector_get(b, 1) << "x + " << gsl_vector_get(b, 2) << "x^2" << std::endl;
+    if(basis == MONOMIAL) {
+        std::cout << gsl_vector_get(b, 0) << " + " << gsl_vector_get(b, 1) << "x + " << gsl_vector_get(b, 2) << "x^2" << std::endl;
+    }else if(basis == LEGENDRE){
+        std::cout << gsl_vector_get(b, 0) << " + " << gsl_vector_get(b, 1) <<  "x + " << gsl_vector_get(b, 2) << "*0.5*(3x^2-1)" << std::endl;
+    }else if(basis == CHEBYSHEV){
+        std::cout << gsl_vector_get(b, 0) << " + " << gsl_vector_get(b, 1) << "x + " << gsl_vector_get(b, 2) << "*2x^2-1" << std::endl;
+    }
 
     std::cout << "Euclidean norm residual(with noise) vector: " << gsl_blas_dnrm2(residual) << std::endl;
 
@@ -113,7 +130,7 @@ gsl_vector* smooth(const double* originalPoints, const double* xPoints, const do
     for(int i = 0; i < 201;i++){
         double xi = xPoints[i];
         double yi = yFunction(xi);
-        double ei = eval(b, xi);
+        double ei = eval(b, xi, basis);
 
         gsl_vector_set(error, i, ei-yi);
     }
@@ -122,8 +139,9 @@ gsl_vector* smooth(const double* originalPoints, const double* xPoints, const do
 
     // Calculate residual(without noise)
     residualVector(A2, b, original, residual2);
-
     std::cout << "Euclidean norm residual(without noise) vector: " << gsl_blas_dnrm2(residual2) << std::endl;
+
+    //flattenVector(residual2);
 
 
     gsl_vector_free(error);
@@ -162,17 +180,17 @@ int main() {
     std::cout << "---------------------" << std::endl << "Original Points" << std::endl << "---------------------" << std::endl;
     gsl_vector* oSmoothed = smooth(yPoints, xPoints, yPoints, MONOMIAL);
     std::cout << "---------------------" << std::endl << "Noised Points" << std::endl << "---------------------" << std::endl;
-    gsl_vector* nSmoothed = smooth(yPoints, xPoints, noisyPoints, MONOMIAL);
+    gsl_vector* mSmoothed = smooth(yPoints, xPoints, noisyPoints, MONOMIAL);
     std::cout << "---------------------" << std::endl << "Noised Points Legendre" << std::endl << "---------------------" << std::endl;
     gsl_vector* lSmoothed = smooth(yPoints, xPoints, noisyPoints, LEGENDRE);
     std::cout << "---------------------" << std::endl << "Noised Points Chebyshev" << std::endl << "---------------------" << std::endl;
     gsl_vector* cSmoothed = smooth(yPoints, xPoints, noisyPoints, CHEBYSHEV);
 
     // Calculate points
-    PointsWriter originalLSPW("data/originalLS.dat");
-    originalLSPW.header("x", "y");
+    PointsWriter OLSPW("data/OLS.dat");
+    OLSPW.header("x", "y");
 
-    PointsWriter MnoisyLSPW("data/noisyLS.dat");
+    PointsWriter MnoisyLSPW("data/MnoisyLS.dat");
     MnoisyLSPW.header("x", "y");
 
     PointsWriter LnoisyLSPW("data/LnoisyLS.dat");
@@ -183,15 +201,15 @@ int main() {
 
 
     for(double xi = -1;xi < 1;xi += 0.001){
-        originalLSPW.line(xi, eval(oSmoothed, xi));
-        MnoisyLSPW.line(xi, eval(nSmoothed, xi));
-        LnoisyLSPW.line(xi, eval(lSmoothed, xi));
-        CnoisyLSPW.line(xi, eval(cSmoothed, xi));
+        OLSPW.line(xi, eval(oSmoothed, xi, MONOMIAL));
+        MnoisyLSPW.line(xi, eval(mSmoothed, xi, MONOMIAL));
+        LnoisyLSPW.line(xi, eval(lSmoothed, xi, LEGENDRE));
+        CnoisyLSPW.line(xi, eval(cSmoothed, xi, CHEBYSHEV));
     }
 
 
     gsl_vector_free(oSmoothed);
-    gsl_vector_free(nSmoothed);
+    gsl_vector_free(mSmoothed);
     gsl_vector_free(lSmoothed);
     gsl_vector_free(cSmoothed);
     delete[] noisyPoints;

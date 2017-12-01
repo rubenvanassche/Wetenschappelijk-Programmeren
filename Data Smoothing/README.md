@@ -1,4 +1,4 @@
-# Data Fitting - Oefening 1
+# Data Smoothin - Oefening 5
 
 ## Vereisten:
 - Cmake 3.8

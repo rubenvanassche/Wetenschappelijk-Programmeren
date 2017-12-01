@@ -1,9 +1,8 @@
 \BOOKMARK [1][-]{section.1}{Software}{}% 1
-\BOOKMARK [1][-]{section.2}{Interpolerende Veelterm}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Bevindingen}{section.2}% 3
-\BOOKMARK [1][-]{section.3}{Mock-Chebyshev Polynomial}{}% 4
-\BOOKMARK [2][-]{subsection.3.1}{Selecteren Punten}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.2}{Spacing kiezen}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.3}{Grid}{section.3}% 7
-\BOOKMARK [1][-]{section.4}{Spline}{}% 8
-\BOOKMARK [2][-]{subsection.4.1}{Bevindingen}{section.4}% 9
+\BOOKMARK [1][-]{section.2}{Opgave}{}% 2
+\BOOKMARK [1][-]{section.3}{Opstellen kleinste kwadraten model}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Originele punten}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Noisy Punten}{section.3}% 5
+\BOOKMARK [1][-]{section.4}{Residu's}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Originele Punten}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Noisy Punten}{section.4}% 8

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.26)  27 OCT 2017 11:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.26)  30 NOV 2017 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -679,194 +679,278 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 (/usr/local/texlive/2017basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 4266) in paragraph at lines 42--44
-\OT1/cmr/m/n/10 Vervolgens ge-ne-re-ren we een veel-term in-ter-
+<../plots/original.png, id=38, 602.25pt x 602.25pt>
+File: ../plots/original.png Graphic file (type png)
+
+<use ../plots/original.png>
+Package pdftex.def Info: ../plots/original.png used on input line 22.
+(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
+ <../plots/noisy.png, id=39, 602.25pt x 602.25pt>
+File: ../plots/noisy.png Graphic file (type png)
+
+<use ../plots/noisy.png>
+Package pdftex.def Info: ../plots/noisy.png used on input line 26.
+(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
+ [1{/usr/local/texlive/2017basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <../plots/original.png> <../plots/noisy.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+\OT1/cmr/m/n/10 GSL voor-ziet voor de de-com-po-si-tie de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
-\OT1/cmr/m/n/10 po-lant(\OT1/cmtt/m/n/10 gsl_interp_polynomial\OT1/cmr/m/n/10 )
- d.m.v. de
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+\OT1/cmtt/m/n/10 gsl_linalg_QR_decomp \OT1/cmr/m/n/10 func-tie en voor het
  []
 
-<../plots/polynomial.png, id=42, 602.25pt x 602.25pt>
-File: ../plots/polynomial.png Graphic file (type png)
 
-<use ../plots/polynomial.png>
-Package pdftex.def Info: ../plots/polynomial.png used on input line 48.
-(pdftex.def)             Requested size: 226.0pt x 225.9994pt.
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 48--49
-[][] 
+Underfull \hbox (badness 2368) in paragraph at lines 34--36
+\OT1/cmr/m/n/10 op-los-sen van het stel-sel waar-bij de $\OML/cmm/m/it/10 l[]$ 
+\OT1/cmr/m/n/10 norm
  []
 
-<../plots/polynomial-error.png, id=43, 602.25pt x 602.25pt>
-File: ../plots/polynomial-error.png Graphic file (type png)
 
-<use ../plots/polynomial-error.png>
-Package pdftex.def Info: ../plots/polynomial-error.png used on input line 53.
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+\OT1/cmr/m/n/10 van het re-sidu wordt ge-mi-ni-ma-li-seerd de
+ []
+
+
+Underfull \hbox (badness 4242) in paragraph at lines 34--36
+\OT1/cmtt/m/n/10 gsl_linalg_QR_lssolve \OT1/cmr/m/n/10 func-tie. Het po-ly-
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 34--36
+\OT1/cmr/m/n/10 no-mi-ale klein-ste kwa-dra-ten mo-del ziet er dan
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 36--38
+\OT1/cmr/m/n/10 Een kleine op-mer-king die ge-maakt moet wor-
+ []
+
+<../plots/OLS.png, id=59, 602.25pt x 602.25pt>
+File: ../plots/OLS.png Graphic file (type png)
+ <use ../plots/OLS.png>
+Package pdftex.def Info: ../plots/OLS.png used on input line 61.
 (pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
 
-<../plots/polynomial-error2.png, id=44, 602.25pt x 602.25pt>
-File: ../plots/polynomial-error2.png Graphic file (type png)
+<../plots/MnoisyLS.png, id=60, 602.25pt x 602.25pt>
+File: ../plots/MnoisyLS.png Graphic file (type png)
 
-<use ../plots/polynomial-error2.png>
-Package pdftex.def Info: ../plots/polynomial-error2.png used on input line 58.
+<use ../plots/MnoisyLS.png>
+Package pdftex.def Info: ../plots/MnoisyLS.png used on input line 86.
 (pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
 
-<../plots/polynomial-approx.png, id=45, 602.25pt x 602.25pt>
-File: ../plots/polynomial-approx.png Graphic file (type png)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<use ../plots/polynomial-approx.png>
-Package pdftex.def Info: ../plots/polynomial-approx.png used on input line 63.
-(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
+ [2 <../plots/OLS.png>] <../plots/monomialsCombinedLS.png, id=67, 602.25pt x 60
+2.25pt>
+File: ../plots/monomialsCombinedLS.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--66
-
- []
-
-[1{/usr/local/texlive/2017basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
- <../plots/polynomial.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-[]\OT1/cmr/bx/n/14.4 Mock-Chebyshev Po-ly-no-
- []
-
-[2 <../plots/polynomial-error.png> <../plots/polynomial-error2.png> <../plots/p
-olynomial-approx.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
-\OT1/cmr/m/n/10 Uiteindelijk be-ko-men we voor een spa-cing
- []
-
-<../plots/mockcheb-gridPoints.png, id=72, 602.25pt x 602.25pt>
-File: ../plots/mockcheb-gridPoints.png Graphic file (type png)
-
-<use ../plots/mockcheb-gridPoints.png>
-Package pdftex.def Info: ../plots/mockcheb-gridPoints.png used on input line 90
+<use ../plots/monomialsCombinedLS.png>
+Package pdftex.def Info: ../plots/monomialsCombinedLS.png used on input line 90
 .
 (pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<../plots/mockcheb-chebPoints.png, id=73, 602.25pt x 602.25pt>
-File: ../plots/mockcheb-chebPoints.png Graphic file (type png)
-
-<use ../plots/mockcheb-chebPoints.png>
-Package pdftex.def Info: ../plots/mockcheb-chebPoints.png used on input line 94
-.
-(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
-
-<../plots/mockcheb.png, id=74, 602.25pt x 602.25pt>
-File: ../plots/mockcheb.png Graphic file (type png)
-
-<use ../plots/mockcheb.png>
-Package pdftex.def Info: ../plots/mockcheb.png used on input line 98.
-(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
-
-Underfull \hbox (badness 6542) in paragraph at lines 96--99
-[]\OT1/cmr/m/n/10 Vervolgens kij-ken we naar een plot van
+Underfull \hbox (badness 3229) in paragraph at lines 94--95
+\OT1/cmr/m/n/10 0, -1.11022e-16, -1.11022e-16, -1.11022e-16, -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--99
-\OT1/cmr/m/n/10 de ge[]^^Pnterpoleerde en ori-gi-nele func-tie
+Underfull \hbox (badness 3439) in paragraph at lines 94--95
+\OT1/cmr/m/n/10 16, 4.44089e-16, 0, 4.44089e-16, 4.44089e-16,
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0191613, 0.0217864, 0.0243778, 0.0269354,
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 96--99
-\OT1/cmr/m/n/10 wone"polynomische in-ter-po-la-tie dat dat beide
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0294592, 0.0319493, 0.0344056, 0.0368281,
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3 <../plots/mockcheb-gridPoints.png> <../plots/mockcheb-chebPoints.png>]
-<../plots/mockcheb-error.png, id=81, 602.25pt x 602.25pt>
-File: ../plots/mockcheb-error.png Graphic file (type png)
-
-<use ../plots/mockcheb-error.png>
-Package pdftex.def Info: ../plots/mockcheb-error.png used on input line 102.
-(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
-
-<../plots/mockcheb-approx.png, id=82, 602.25pt x 602.25pt>
-File: ../plots/mockcheb-approx.png Graphic file (type png)
-
-<use ../plots/mockcheb-approx.png>
-Package pdftex.def Info: ../plots/mockcheb-approx.png used on input line 106.
-(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 5050) in paragraph at lines 108--109
-[]\OT1/cmr/m/n/10 Wat op-valt: in te-gen-stel-ling tot de vo-
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0392169, 0.041572, 0.0438933, 0.0461808,
  []
 
-<../plots/spline.png, id=83, 602.25pt x 602.25pt>
-File: ../plots/spline.png Graphic file (type png)
- <use ../plots/spline.png>
-Package pdftex.def Info: ../plots/spline.png used on input line 114.
-(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0484345, 0.0506545, 0.0528408, 0.0549933,
+ []
 
- [4 <../plots/mockcheb.png> <../plots/mockcheb-error.png> <../plots/mockcheb-ap
-prox.png>]
-<../plots/spline-error.png, id=91, 602.25pt x 602.25pt>
-File: ../plots/spline-error.png Graphic file (type png)
 
-<use ../plots/spline-error.png>
-Package pdftex.def Info: ../plots/spline-error.png used on input line 118.
-(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.057112, 0.0591969, 0.0612481, 0.0632656,
+ []
 
-<../plots/spline-approx.png, id=92, 602.25pt x 602.25pt>
-File: ../plots/spline-approx.png Graphic file (type png)
 
-<use ../plots/spline-approx.png>
-Package pdftex.def Info: ../plots/spline-approx.png used on input line 122.
-(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0652493, 0.0671992, 0.0691154, 0.0709978,
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
- [5 <../plots/spline.png> <../plots/spline-error.png> <../plots/spline-approx.p
-ng>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0728464, 0.0746613, 0.0764424, 0.0781898,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0799034, 0.0815833, 0.0832293, 0.0848417,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0864202, 0.0879651, 0.0894761, 0.0909534,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0923969, 0.0938067, 0.0951827, 0.096525,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0997563, 0.0984991, 0.0972081, 0.0958834,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0945249, 0.0931326, 0.0917066, 0.0902468,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0887533, 0.087226, 0.0856649, 0.0840701,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0824415, 0.0807792, 0.0790831, 0.0773533,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0755897, 0.0737923, 0.0719612, 0.0700963,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0681976, 0.0662652, 0.064299, 0.0622991,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0602654, 0.058198, 0.0560968, 0.0539618,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0517931, 0.0495906, 0.0473544, 0.0450844,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0427806, 0.0404431, 0.0380718, 0.0356667,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0332279, 0.0307554, 0.0282491, 0.025709,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0231352, 0.0205276, 0.0178862, 0.0152111,
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 0.0125022, 0.00975958, 0.00698318, 0.00417303,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 -0.0103841, -0.0133968, -0.0164433, -0.0195235,
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 -0.0226375, -0.0257853, -0.0289668, -0.032182,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 -0.0354311, -0.0387139, -0.0420304, -0.0453807,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 -0.0487648, -0.0521826, -0.0556342, -0.0591195,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 -0.0626386, -0.0661915, -0.0697781, -0.0733985,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 -0.0770526, -0.0807405, -0.0844622, -0.0882176,
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 -0.0920068, -0.0958297, -0.0996864, -0.103577,
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 96--97
+\OT1/cmr/m/n/10 -0.107501, -0.111459, -0.115451, -0.119476, -
+ []
+
+[3 <../plots/MnoisyLS.png> <../plots/monomialsCombinedLS.png>] [4
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
 
 (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: BFAE4084BD05C90FB684E685DE647EC8;504.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
+(rerunfilecheck)             Checksum: 81140D2A53595B1114E0319995DC0FA1;448.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 8189 strings out of 494437
- 116476 string characters out of 6166644
- 212674 words of memory out of 5000000
- 11408 multiletter control sequences out of 15000+600000
+ 8151 strings out of 494437
+ 115295 string characters out of 6166644
+ 211673 words of memory out of 5000000
+ 11379 multiletter control sequences out of 15000+600000
  11531 words of font info for 46 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 28i,8n,32p,761b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,8n,32p,2220b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr12.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr17.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017basic/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2017basic/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (5 pages, 289375 bytes).
+mex10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi7.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017basic/texmf-dist/font
+s/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2017basic/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on report.pdf (4 pages, 210085 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
