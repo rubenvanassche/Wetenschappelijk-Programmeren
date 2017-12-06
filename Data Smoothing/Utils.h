@@ -101,10 +101,6 @@ void residualVector(gsl_matrix* A, gsl_vector* x, gsl_vector* b, gsl_vector* res
 }
 
 double conditionNumber(gsl_matrix* m){
-    if(m->size1 != m->size2){
-        //throw new std::runtime_error("Can only calculate the condition number of an square matrix");
-    }
-
     gsl_matrix* r = gsl_matrix_alloc(m->size1, m->size2);
     gsl_matrix_memcpy(r,m);
 
@@ -141,4 +137,3 @@ double conditionNumber(gsl_matrix* m){
 
 
 #endif //SYSTEM_OF_LINEAR_EQUATIONS_UTILS_H
-

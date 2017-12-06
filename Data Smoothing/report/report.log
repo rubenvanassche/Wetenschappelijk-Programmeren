@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.26)  30 NOV 2017 22:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.26)  1 DEC 2017 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -679,13 +679,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 (/usr/local/texlive/2017basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../plots/original.png, id=38, 602.25pt x 602.25pt>
+<../plots/original.png, id=46, 602.25pt x 602.25pt>
 File: ../plots/original.png Graphic file (type png)
 
 <use ../plots/original.png>
 Package pdftex.def Info: ../plots/original.png used on input line 22.
 (pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
- <../plots/noisy.png, id=39, 602.25pt x 602.25pt>
+ <../plots/noisy.png, id=47, 602.25pt x 602.25pt>
 File: ../plots/noisy.png Graphic file (type png)
 
 <use ../plots/noisy.png>
@@ -730,13 +730,13 @@ Underfull \hbox (badness 1092) in paragraph at lines 36--38
 \OT1/cmr/m/n/10 Een kleine op-mer-king die ge-maakt moet wor-
  []
 
-<../plots/OLS.png, id=59, 602.25pt x 602.25pt>
+<../plots/OLS.png, id=67, 602.25pt x 602.25pt>
 File: ../plots/OLS.png Graphic file (type png)
  <use ../plots/OLS.png>
 Package pdftex.def Info: ../plots/OLS.png used on input line 61.
 (pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
 
-<../plots/MnoisyLS.png, id=60, 602.25pt x 602.25pt>
+<../plots/MnoisyLS.png, id=68, 602.25pt x 602.25pt>
 File: ../plots/MnoisyLS.png Graphic file (type png)
 
 <use ../plots/MnoisyLS.png>
@@ -745,7 +745,7 @@ Package pdftex.def Info: ../plots/MnoisyLS.png used on input line 86.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <../plots/OLS.png>] <../plots/monomialsCombinedLS.png, id=67, 602.25pt x 60
+ [2 <../plots/OLS.png>] <../plots/monomialsCombinedLS.png, id=75, 602.25pt x 60
 2.25pt>
 File: ../plots/monomialsCombinedLS.png Graphic file (type png)
 
@@ -754,183 +754,509 @@ Package pdftex.def Info: ../plots/monomialsCombinedLS.png used on input line 90
 .
 (pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
 
-Underfull \hbox (badness 3229) in paragraph at lines 94--95
+<../plots/CnoisyLS.png, id=76, 602.25pt x 602.25pt>
+File: ../plots/CnoisyLS.png Graphic file (type png)
+
+<use ../plots/CnoisyLS.png>
+Package pdftex.def Info: ../plots/CnoisyLS.png used on input line 115.
+(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
+
+<../plots/combinedLS.png, id=77, 602.25pt x 602.25pt>
+File: ../plots/combinedLS.png Graphic file (type png)
+
+<use ../plots/combinedLS.png>
+Package pdftex.def Info: ../plots/combinedLS.png used on input line 141.
+(pdftex.def)             Requested size: 180.79724pt x 180.79585pt.
+
+Underfull \hbox (badness 2103) in paragraph at lines 138--142
+\OT1/cmr/m/n/10 Het re-sidu en de er-ror blij-ven op-nieuw het-
+ []
+
+[3 <../plots/MnoisyLS.png> <../plots/monomialsCombinedLS.png> <../plots/CnoisyL
+S.png>]
+Underfull \hbox (badness 3229) in paragraph at lines 146--147
 \OT1/cmr/m/n/10 0, -1.11022e-16, -1.11022e-16, -1.11022e-16, -
  []
 
 
-Underfull \hbox (badness 3439) in paragraph at lines 94--95
+Underfull \hbox (badness 3439) in paragraph at lines 146--147
 \OT1/cmr/m/n/10 16, 4.44089e-16, 0, 4.44089e-16, 4.44089e-16,
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0191613, 0.0217864, 0.0243778, 0.0269354,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0294592, 0.0319493, 0.0344056, 0.0368281,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0392169, 0.041572, 0.0438933, 0.0461808,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0484345, 0.0506545, 0.0528408, 0.0549933,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.057112, 0.0591969, 0.0612481, 0.0632656,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0652493, 0.0671992, 0.0691154, 0.0709978,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0728464, 0.0746613, 0.0764424, 0.0781898,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0799034, 0.0815833, 0.0832293, 0.0848417,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0864202, 0.0879651, 0.0894761, 0.0909534,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0923969, 0.0938067, 0.0951827, 0.096525,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0997563, 0.0984991, 0.0972081, 0.0958834,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0945249, 0.0931326, 0.0917066, 0.0902468,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0887533, 0.087226, 0.0856649, 0.0840701,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0824415, 0.0807792, 0.0790831, 0.0773533,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0755897, 0.0737923, 0.0719612, 0.0700963,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0681976, 0.0662652, 0.064299, 0.0622991,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0602654, 0.058198, 0.0560968, 0.0539618,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0517931, 0.0495906, 0.0473544, 0.0450844,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0427806, 0.0404431, 0.0380718, 0.0356667,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0332279, 0.0307554, 0.0282491, 0.025709,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0231352, 0.0205276, 0.0178862, 0.0152111,
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 96--97
+Underfull \hbox (badness 1067) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0.0125022, 0.00975958, 0.00698318, 0.00417303,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 96--97
+Underfull \hbox (badness 1502) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 -0.0103841, -0.0133968, -0.0164433, -0.0195235,
  []
 
 
-Underfull \hbox (badness 3492) in paragraph at lines 96--97
+Underfull \hbox (badness 3492) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 -0.0226375, -0.0257853, -0.0289668, -0.032182,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 96--97
+Underfull \hbox (badness 1502) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 -0.0354311, -0.0387139, -0.0420304, -0.0453807,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 96--97
+Underfull \hbox (badness 1502) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 -0.0487648, -0.0521826, -0.0556342, -0.0591195,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 96--97
+Underfull \hbox (badness 1502) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 -0.0626386, -0.0661915, -0.0697781, -0.0733985,
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 96--97
+Underfull \hbox (badness 1502) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 -0.0770526, -0.0807405, -0.0844622, -0.0882176,
  []
 
 
-Underfull \hbox (badness 3492) in paragraph at lines 96--97
+Underfull \hbox (badness 3492) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 -0.0920068, -0.0958297, -0.0996864, -0.103577,
  []
 
 
-Underfull \hbox (badness 4108) in paragraph at lines 96--97
+Underfull \hbox (badness 4108) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 -0.107501, -0.111459, -0.115451, -0.119476, -
  []
 
-[3 <../plots/MnoisyLS.png> <../plots/monomialsCombinedLS.png>] [4
+[4 <../plots/combinedLS.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0191613, 0.0217864, 0.0243778, 0.0269354,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0294592, 0.0319493, 0.0344056, 0.0368281,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0392169, 0.041572, 0.0438933, 0.0461808,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0484345, 0.0506545, 0.0528408, 0.0549933,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.057112, 0.0591969, 0.0612481, 0.0632656,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0652493, 0.0671992, 0.0691154, 0.0709978,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0728464, 0.0746613, 0.0764424, 0.0781898,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0799034, 0.0815833, 0.0832293, 0.0848417,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0864202, 0.0879651, 0.0894761, 0.0909534,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0923969, 0.0938067, 0.0951827, 0.096525,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0997563, 0.0984991, 0.0972081, 0.0958834,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0945249, 0.0931326, 0.0917066, 0.0902468,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0887533, 0.087226, 0.0856649, 0.0840701,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0824415, 0.0807792, 0.0790831, 0.0773533,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0755897, 0.0737923, 0.0719612, 0.0700963,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0681976, 0.0662652, 0.064299, 0.0622991,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0602654, 0.058198, 0.0560968, 0.0539618,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0517931, 0.0495906, 0.0473544, 0.0450844,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0427806, 0.0404431, 0.0380718, 0.0356667,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0332279, 0.0307554, 0.0282491, 0.025709,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0231352, 0.0205276, 0.0178862, 0.0152111,
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 0.0125022, 0.00975958, 0.00698318, 0.00417303,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 -0.0103841, -0.0133968, -0.0164433, -0.0195235,
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 -0.0226375, -0.0257853, -0.0289668, -0.032182,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 -0.0354311, -0.0387139, -0.0420304, -0.0453807,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 -0.0487648, -0.0521826, -0.0556342, -0.0591195,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 -0.0626386, -0.0661915, -0.0697781, -0.0733985,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 -0.0770526, -0.0807405, -0.0844622, -0.0882176,
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 -0.0920068, -0.0958297, -0.0996864, -0.103577,
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 150--151
+\OT1/cmr/m/n/10 -0.107501, -0.111459, -0.115451, -0.119476, -
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0191613, 0.0217864, 0.0243778, 0.0269354,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0294592, 0.0319493, 0.0344056, 0.0368281,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0392169, 0.041572, 0.0438933, 0.0461808,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0484345, 0.0506545, 0.0528408, 0.0549933,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.057112, 0.0591969, 0.0612481, 0.0632656,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0652493, 0.0671992, 0.0691154, 0.0709978,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0728464, 0.0746613, 0.0764424, 0.0781898,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0799034, 0.0815833, 0.0832293, 0.0848417,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0864202, 0.0879651, 0.0894761, 0.0909534,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0923969, 0.0938067, 0.0951827, 0.096525,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0997563, 0.0984991, 0.0972081, 0.0958834,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0945249, 0.0931326, 0.0917066, 0.0902468,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0887533, 0.087226, 0.0856649, 0.0840701,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0824415, 0.0807792, 0.0790831, 0.0773533,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0755897, 0.0737923, 0.0719612, 0.0700963,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0681976, 0.0662652, 0.064299, 0.0622991,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0602654, 0.058198, 0.0560968, 0.0539618,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0517931, 0.0495906, 0.0473544, 0.0450844,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0427806, 0.0404431, 0.0380718, 0.0356667,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0332279, 0.0307554, 0.0282491, 0.025709,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0231352, 0.0205276, 0.0178862, 0.0152111,
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 0.0125022, 0.00975958, 0.00698318, 0.00417303,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 -0.0103841, -0.0133968, -0.0164433, -0.0195235,
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 -0.0226375, -0.0257853, -0.0289668, -0.032182,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 -0.0354311, -0.0387139, -0.0420304, -0.0453807,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 -0.0487648, -0.0521826, -0.0556342, -0.0591195,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 -0.0626386, -0.0661915, -0.0697781, -0.0733985,
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 -0.0770526, -0.0807405, -0.0844622, -0.0882176,
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 -0.0920068, -0.0958297, -0.0996864, -0.103577,
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 -0.107501, -0.111459, -0.115451, -0.119476, -
+ []
+
+[5] [6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
+ (./report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 
-(./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 81140D2A53595B1114E0319995DC0FA1;448.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 1B7774DDCA72E35D1CC26A64DFC428CA;590
+(rerunfilecheck)             After:  A91B51CB670AF5E3A2F9E3D6732D6F90;733.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 8151 strings out of 494437
- 115295 string characters out of 6166644
+ 8169 strings out of 494437
+ 115635 string characters out of 6166644
  211673 words of memory out of 5000000
- 11379 multiletter control sequences out of 15000+600000
+ 11389 multiletter control sequences out of 15000+600000
  11531 words of font info for 46 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  28i,8n,32p,2220b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -947,10 +1273,10 @@ public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type
 pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017basic/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2017basic/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (4 pages, 210085 bytes).
+Output written on report.pdf (6 pages, 250235 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 90 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

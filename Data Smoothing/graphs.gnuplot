@@ -4,7 +4,6 @@ set key bmargin left horizontal Right noreverse enhanced autotitles box linetype
 set samples 10000
 set xtics 1
 set ytics 1
-set size ratio -1
 plot "data/original.dat" using 1:2 with points, \
 "data/noisy.dat" using 1:2 with points
 
@@ -14,7 +13,6 @@ set key bmargin left horizontal Right noreverse enhanced autotitles box linetype
 set samples 10000
 set xtics 1
 set ytics 1
-set size ratio -1
 plot "data/original.dat" using 1:2 with points
 
 set terminal png  transparent enhanced font "arial,10" fontscale 1.0 size 800, 800
@@ -23,7 +21,6 @@ set key bmargin left horizontal Right noreverse enhanced autotitles box linetype
 set samples 10000
 set xtics 1
 set ytics 1
-set size ratio -1
 plot "data/noisy.dat" using 1:2 with points
 
 set terminal png  transparent enhanced font "arial,10" fontscale 1.0 size 800, 800
@@ -32,7 +29,6 @@ set key bmargin left horizontal Right noreverse enhanced autotitles box linetype
 set samples 10000
 set xtics 1
 set ytics 1
-set size ratio -1
 plot "data/OLS.dat" using 1:2 with lines, \
 "data/MnoisyLS.dat" using 1:2 with lines, \
 "data/LnoisyLS.dat" using 1:2 with lines, \
@@ -45,7 +41,6 @@ set key bmargin left horizontal Right noreverse enhanced autotitles box linetype
 set samples 10000
 set xtics 1
 set ytics 1
-set size ratio -1
 plot "data/OLS.dat" using 1:2 with lines, \
 "data/MnoisyLS.dat" using 1:2 with lines, \
 "data/noisy.dat" using 1:2 with points
@@ -56,7 +51,6 @@ set key bmargin left horizontal Right noreverse enhanced autotitles box linetype
 set samples 10000
 set xtics 1
 set ytics 1
-set size ratio -1
 plot "data/OLS.dat" using 1:2 with lines, \
 "data/original.dat" using 1:2 with points
 
@@ -66,7 +60,6 @@ set key bmargin left horizontal Right noreverse enhanced autotitles box linetype
 set samples 10000
 set xtics 1
 set ytics 1
-set size ratio -1
 plot "data/MnoisyLS.dat" using 1:2 with lines, \
 "data/noisy.dat" using 1:2 with points
 
@@ -76,7 +69,6 @@ set key bmargin left horizontal Right noreverse enhanced autotitles box linetype
 set samples 10000
 set xtics 1
 set ytics 1
-set size ratio -1
 plot "data/LnoisyLS.dat" using 1:2 with lines, \
 "data/noisy.dat" using 1:2 with points
 
@@ -86,6 +78,5 @@ set key bmargin left horizontal Right noreverse enhanced autotitles box linetype
 set samples 10000
 set xtics 1
 set ytics 1
-set size ratio -1
 plot "data/CnoisyLS.dat" using 1:2 with lines, \
 "data/noisy.dat" using 1:2 with points

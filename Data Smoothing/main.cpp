@@ -26,12 +26,12 @@ double eval(gsl_vector* v, double x, Basis basis){
         out += gsl_vector_get(v, 2)*pow(x, 2);
     }else if(basis == LEGENDRE){
         out += gsl_vector_get(v, 0)*1;
-        out += gsl_vector_get(v, 1)*gsl_sf_legendre_P2(x);
+        out += gsl_vector_get(v, 1)*gsl_sf_legendre_P1(x);
         out += gsl_vector_get(v, 2)*gsl_sf_legendre_P2(x);
     }else if(basis == CHEBYSHEV){
         out += gsl_vector_get(v, 0)*1;
         out += gsl_vector_get(v, 1)*x;
-        out += gsl_vector_get(v, 2)*(2*pow(x, 2) - 1);
+        out += gsl_vector_get(v, 2)*((2*pow(x, 2)) - 1);
     }
 
     return out;
@@ -95,8 +95,8 @@ gsl_vector* smooth(const double* originalPoints, const double* xPoints, const do
             gsl_matrix_set(A, i, 2, pow(xPoints[i], 2));
         }else if(basis == LEGENDRE){
             gsl_matrix_set(A, i, 0, 1);
-            gsl_matrix_set(A, i, 1, gsl_sf_legendre_P2(xPoints[i]));
-            gsl_matrix_set(A, i, 2, gsl_sf_legendre_P3(xPoints[i]));
+            gsl_matrix_set(A, i, 1, gsl_sf_legendre_P1(xPoints[i]));
+            gsl_matrix_set(A, i, 2, gsl_sf_legendre_P2(xPoints[i]));
         }else if(basis == CHEBYSHEV){
             gsl_matrix_set(A, i, 0, 1);
             gsl_matrix_set(A, i, 1, xPoints[i]);
@@ -121,10 +121,12 @@ gsl_vector* smooth(const double* originalPoints, const double* xPoints, const do
     }else if(basis == LEGENDRE){
         std::cout << gsl_vector_get(b, 0) << " + " << gsl_vector_get(b, 1) <<  "x + " << gsl_vector_get(b, 2) << "*0.5*(3x^2-1)" << std::endl;
     }else if(basis == CHEBYSHEV){
-        std::cout << gsl_vector_get(b, 0) << " + " << gsl_vector_get(b, 1) << "x + " << gsl_vector_get(b, 2) << "*2x^2-1" << std::endl;
+        std::cout << gsl_vector_get(b, 0) << " + " << gsl_vector_get(b, 1) << "x + " << gsl_vector_get(b, 2) << "*(2x^2-1)" << std::endl;
     }
 
     std::cout << "Euclidean norm residual(with noise) vector: " << gsl_blas_dnrm2(residual) << std::endl;
+
+
 
     // Check the error
     for(int i = 0; i < 201;i++){
@@ -132,7 +134,7 @@ gsl_vector* smooth(const double* originalPoints, const double* xPoints, const do
         double yi = yFunction(xi);
         double ei = eval(b, xi, basis);
 
-        gsl_vector_set(error, i, ei-yi);
+        gsl_vector_set(error, i, fabs(yi-ei));
     }
 
     std::cout << "Euclidean norm error vector: " << gsl_blas_dnrm2(error) << std::endl;
@@ -140,8 +142,6 @@ gsl_vector* smooth(const double* originalPoints, const double* xPoints, const do
     // Calculate residual(without noise)
     residualVector(A2, b, original, residual2);
     std::cout << "Euclidean norm residual(without noise) vector: " << gsl_blas_dnrm2(residual2) << std::endl;
-
-    //flattenVector(residual2);
 
 
     gsl_vector_free(error);
@@ -161,6 +161,8 @@ gsl_vector* smooth(const double* originalPoints, const double* xPoints, const do
 
 
 int main() {
+    std::cout.precision(10);
+
     const double* xPoints = getXPoints();
     const double* yPoints = getYPoints(xPoints);
     const double* noisyPoints = getNoisyPoints(yPoints);
