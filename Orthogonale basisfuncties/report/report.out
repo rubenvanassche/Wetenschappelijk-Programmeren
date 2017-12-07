@@ -1,9 +1,11 @@
-\BOOKMARK [1][-]{section.1}{Software}{}% 1
-\BOOKMARK [1][-]{section.2}{Interpolerende Veelterm}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Bevindingen}{section.2}% 3
-\BOOKMARK [1][-]{section.3}{Mock-Chebyshev Polynomial}{}% 4
-\BOOKMARK [2][-]{subsection.3.1}{Selecteren Punten}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.2}{Spacing kiezen}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.3}{Grid}{section.3}% 7
-\BOOKMARK [1][-]{section.4}{Spline}{}% 8
-\BOOKMARK [2][-]{subsection.4.1}{Bevindingen}{section.4}% 9
+\BOOKMARK [1][-]{section.1}{Originele functie}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Nulpunten}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Extrema}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Trigonometrische Interpolant}{}% 4
+\BOOKMARK [1][-]{section.3}{Discrepantie}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Oplossing}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Algoritme}{subsection.3.1}% 7
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Periodiciteit}{subsection.3.1}% 8
+\BOOKMARK [3][-]{subsubsection.3.1.3}{De vorm}{subsection.3.1}% 9
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Een combinatie}{subsection.3.1}% 10
+\BOOKMARK [1][-]{section.4}{Code}{}% 11

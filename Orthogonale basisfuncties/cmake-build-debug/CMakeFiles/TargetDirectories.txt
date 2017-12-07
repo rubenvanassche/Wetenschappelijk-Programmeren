@@ -1,3 +1,0 @@
-/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Orthogonale basisfuncties/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Orthogonale basisfuncties/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/ruben/Documents/School/Wetenschappelijk-Programmeren/Orthogonale basisfuncties/cmake-build-debug/CMakeFiles/main.dir
